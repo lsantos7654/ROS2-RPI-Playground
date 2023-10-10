@@ -41,6 +41,13 @@ int main()
             std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
         }
 
+        if (choice == 3){
+            std::cout << "LED 17 is set to " << line1.get_value() << std::endl;
+        }
+        if (choice == 4){
+            std::cout << "LED 27 is set to " << line2.get_value() << std::endl;
+        }
+
 
         std::cin.get();
     }
