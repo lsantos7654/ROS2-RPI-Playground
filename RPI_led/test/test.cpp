@@ -5,17 +5,19 @@
 #define GPIO_CHIP "gpiochip0"
 #define GPIO_PIN_17 17
 #define GPIO_PIN_27 27
+#define GPIO_PIN_23 23
 
 class LED
 {
 public:
-    gpiod::line line1, line2;
+    gpiod::line line1, line2, line3;
 
     LED()
     {
         gpiod::chip chip(GPIO_CHIP);
         line1 = chip.get_line(GPIO_PIN_17);
         line2 = chip.get_line(GPIO_PIN_27);
+        line3 = chip.get_line(GPIO_PIN_23);
         
         // Check if the line is available for use
         if (!line1.is_requested())
@@ -25,6 +27,10 @@ public:
         if (!line2.is_requested())
         {
             line2.request({ "gpio_toggle_led", gpiod::line_request::DIRECTION_OUTPUT });
+        }
+        if (!line3.is_requested())
+        {
+            line3.request({ "gpio_read", gpiod::line_request::DIRECTION_INPUT });
         }
     }
 
@@ -54,7 +60,7 @@ int main()
     int value2 = 0;
     int choice = 0;
 
-    std::cout << "1: LED 17\n2: LED_27\n3: Status LED 17\n4: Status LED 27" << std::endl;
+    std::cout << "1: LED 17\n2: LED_27\n3: Status LED 17\n4: Status LED 27\n5: Status GPIO 23" << std::endl;
         
     while(1)
     {
@@ -79,6 +85,9 @@ int main()
         else if (choice == 4)
         {
             std::cout << "LED 27 is set to " << led->line2.get_value() << std::endl;
+        }else if (choice == 5)
+        {
+            std::cout << "GPIO 23 is set to " << led->line3.get_value() << std::endl;
         }
         else
         {
