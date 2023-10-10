@@ -28,29 +28,31 @@ int main()
 
     while(1)
     {
-        std::cout << "1: LED 17, 0: LED_27" << std::endl;
+        //std::cout << "1: LED 17, 0: LED_27" << std::endl;
         std::cin >> choice;
         
-        if (choice){
+        if (choice == 1){
             value1 = !value1; // Toggle value
             line1.set_value(value1);
             std::cout << "LED 17 set to " << (value1 ? "ON" : "OFF") << std::endl;
-        }else{
+        }else if (choice == 2){
             value2 = !value2; // Toggle value
             line2.set_value(value2);
             std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
-        }
-
-        if (choice == 3){
+        }else if (choice == 3){
             std::cout << "LED 17 is set to " << line1.get_value() << std::endl;
-        }
-        if (choice == 4){
+        }else if (choice == 4){
             std::cout << "LED 27 is set to " << line2.get_value() << std::endl;
-        }
+        }else{
+	    std::cout << "invalid argument" << std::endl;
+	}
 
 
         std::cin.get();
     }
+
+    line1.set_value(0);
+    line2.set_value(0);
 
     return 0;
 }
