@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "cmake.sourceDirectory": "/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control"
+}
