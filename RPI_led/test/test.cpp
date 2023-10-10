@@ -1,6 +1,6 @@
 #include <iostream>
 #include <gpiod.hpp>
-#include <unistd.h>
+#include <iostream>
 
 #define GPIO_CHIP "gpiochip0"
 #define GPIO_PIN_17 17
@@ -25,7 +25,7 @@ int main()
 
         std::cout << "LED set to: " << (value ? "ON" : "OFF") << std::endl;
 
-        sleep(1); // Sleep for 1 second before toggling again
+        std::cin.get();
     }
 
     return 0;
