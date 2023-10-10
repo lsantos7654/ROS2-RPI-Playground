@@ -1,0 +1,14 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable gpio_talker[0m
+[01m[K/home/lsantos/Sandbox/RPI_led/src/gpio_control/src/gpio_listener.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kgpiod.hpp: No such file or directory
+    5 | #include [01;31m[K<gpiod.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gpio_listener.dir/build.make:76: CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/gpio_listener.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: cannot find -lgpiodcxx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gpio_talker.dir/build.make:174: gpio_talker] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gpio_talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
