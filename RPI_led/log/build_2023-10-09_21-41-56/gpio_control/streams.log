@@ -1,0 +1,29 @@
+[0.026s] Invoking command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24
+[0.044s] [ 25%] [32mBuilding CXX object CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o[0m
+[0.045s] [ 50%] [32m[1mLinking CXX executable gpio_talker[0m
+[0.229s] [ 75%] Built target gpio_talker
+[3.644s] [100%] [32m[1mLinking CXX executable gpio_listener[0m
+[3.905s] [100%] Built target gpio_listener
+[3.909s] Invoked command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24
+[3.922s] Invoking command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/Sandbox/RPI_led/build/gpio_control
+[3.925s] -- Install configuration: ""
+[3.925s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker
+[3.925s] -- Set runtime path of "/home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker" to ""
+[3.925s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_listener
+[3.927s] -- Set runtime path of "/home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_listener" to ""
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/package_run_dependencies/gpio_control
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/parent_prefix_path/gpio_control
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.sh
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.dsv
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.sh
+[3.927s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.dsv
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.bash
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.sh
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.zsh
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.dsv
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.dsv
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/packages/gpio_control
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig.cmake
+[3.928s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig-version.cmake
+[3.928s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.xml
+[3.929s] Invoked command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/Sandbox/RPI_led/build/gpio_control

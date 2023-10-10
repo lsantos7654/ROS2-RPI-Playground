@@ -18,7 +18,6 @@ int main(int argc, char **argv)
     {
         std_msgs::msg::Bool msg;
         msg.data = state;
-
         gpio_pub->publish(msg);
 
         state = !state;

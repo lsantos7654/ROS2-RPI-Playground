@@ -1,0 +1,2 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable gpio_talker[0m

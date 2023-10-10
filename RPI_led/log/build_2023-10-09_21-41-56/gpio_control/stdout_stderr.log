@@ -1,0 +1,25 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable gpio_talker[0m
+[ 75%] Built target gpio_talker
+[100%] [32m[1mLinking CXX executable gpio_listener[0m
+[100%] Built target gpio_listener
+-- Install configuration: ""
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker
+-- Set runtime path of "/home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker" to ""
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_listener
+-- Set runtime path of "/home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_listener" to ""
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/package_run_dependencies/gpio_control
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/parent_prefix_path/gpio_control
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.sh
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.dsv
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.sh
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.dsv
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.bash
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.sh
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.zsh
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.dsv
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.dsv
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/packages/gpio_control
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig.cmake
+-- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig-version.cmake
+-- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.xml

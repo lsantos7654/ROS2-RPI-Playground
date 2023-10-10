@@ -1,3 +1,4 @@
 {
-    "ros.distro": "iron"
+    "ros.distro": "iron",
+    "cmake.sourceDirectory": "/home/lsantos/Sandbox/RPI_led/src/gpio_control"
 }

@@ -1,0 +1,27 @@
+[0.027s] Invoking command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24
+[0.048s] [ 50%] Built target gpio_listener
+[0.048s] [ 75%] [32mBuilding CXX object CMakeFiles/gpio_talker.dir/src/gpio_talker.cpp.o[0m
+[2.262s] [100%] [32m[1mLinking CXX executable gpio_talker[0m
+[2.431s] [100%] Built target gpio_talker
+[2.436s] Invoked command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24
+[2.449s] Invoking command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID /usr/bin/cmake --install /home/lsantos/Sandbox/RPI_led/build/gpio_control
+[2.451s] -- Install configuration: ""
+[2.451s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker
+[2.452s] -- Set runtime path of "/home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_talker" to ""
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/lib/gpio_control/gpio_listener
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/package_run_dependencies/gpio_control
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/parent_prefix_path/gpio_control
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.sh
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/ament_prefix_path.dsv
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.sh
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/environment/path.dsv
+[2.452s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.bash
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.sh
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.zsh
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/local_setup.dsv
+[2.453s] -- Installing: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.dsv
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/ament_index/resource_index/packages/gpio_control
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig.cmake
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/cmake/gpio_controlConfig-version.cmake
+[2.453s] -- Up-to-date: /home/lsantos/Sandbox/RPI_led/install/gpio_control/share/gpio_control/package.xml
+[2.454s] Invoked command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID /usr/bin/cmake --install /home/lsantos/Sandbox/RPI_led/build/gpio_control
