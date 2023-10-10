@@ -29,7 +29,7 @@ int main()
     while(1)
     {
         std::cout << "1: LED 17, 0: LED_27" << std::endl;
-        choice = std::cin.get();
+        std::cin >> choice;
         
         if (choice){
             value1 = !value1; // Toggle value
