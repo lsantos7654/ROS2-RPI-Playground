@@ -1,6 +1,6 @@
 #include <iostream>
 #include <gpiod.hpp>
-#include <iostream>
+#include <csignal>
 
 #define GPIO_CHIP "gpiochip0"
 #define GPIO_PIN_17 17
@@ -35,10 +35,20 @@ public:
     }
 };
 
+LED* led = nullptr;
+
+void signalHandler(int signum)
+{
+    delete led;
+    exit(signum);
+}
+
 
 int main()
 {
-    LED* led = new LED();
+    led = new LED();
+
+    signal(SIGINT, signalHandler);
 
     int value1 = 0;
     int value2 = 0;
