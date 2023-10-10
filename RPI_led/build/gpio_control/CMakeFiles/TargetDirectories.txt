@@ -1,0 +1,11 @@
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/uninstall.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/gpio_control_uninstall.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/gpio_talker.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/gpio_listener.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/test.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/edit_cache.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/rebuild_cache.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/list_install_components.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/install.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/install/local.dir
+/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control/CMakeFiles/install/strip.dir

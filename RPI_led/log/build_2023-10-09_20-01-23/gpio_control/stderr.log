@@ -1,0 +1,127 @@
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_listener.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/Bool.h: No such file or directory
+    2 | #include [01;31m[K<std_msgs/Bool.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gpio_listener.dir/build.make:76: CMakeFiles/gpio_listener.dir/src/gpio_listener.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/gpio_listener.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:7:30:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rclcpp::InitOptions&[m[K’ from expression of type ‘[01m[Kconst char [12][m[K’
+    7 |     rclcpp::init(argc, argv, [01;31m[K"gpio_talker"[m[K);
+      |                              [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:43[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/utilities.hpp:78:23:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&, rclcpp::SignalHandlerOptions)[m[K’
+   78 |   [01;36m[Kconst InitOptions & init_options = InitOptions()[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:8:13:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+    8 |     rclcpp::[01;31m[KNodeHandle[m[K n;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:10:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+   10 |     rclcpp::Publisher gpio_pub = [01;31m[Kn[m[K.advertise<std_msgs::Bool>("gpio_signal", 10);
+      |                                  [01;31m[K^[m[K
+      |                                  [32m[Kyn[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:10:56:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Bool[m[K’?
+   10 | blisher gpio_pub = n.advertise<std_msgs::[01;31m[KBool[m[K>("gpio_signal", 10);
+      |                                          [01;31m[K^~~~[m[K
+
+In file included from [01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:2[m[K:
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:122:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Bool[m[K’ declared here
+  122 | using [01;36m[KBool[m[K =
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:10:62:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   10 | r gpio_pub = n.advertise<std_msgs::Bool>([01;35m[K"gpio_signal"[m[K, 10);
+      |                                          [01;35m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:18:19:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Bool[m[K’?
+   18 |         std_msgs::[01;31m[KBool[m[K msg;
+      |                   [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:2[m[K:
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:122:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Bool[m[K’ declared here
+  122 | using [01;36m[KBool[m[K =
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+   19 |         [01;31m[Kmsg[m[K.data = state;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:19:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/iron/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:7[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/time.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/clock.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/client.hpp:38[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/iron/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/iron/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/iron/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:236[m[K,
+                 from [01m[K/opt/ros/iron/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/bool.hpp:7[m[K,
+                 from [01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:2[m[K:
+[01m[K/opt/ros/iron/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control/src/gpio_talker.cpp:25:17:[m[K [01;31m[Kerror: [m[K‘[01m[KspinOnce[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+   25 |         rclcpp::[01;31m[KspinOnce[m[K();
+      |                 [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gpio_talker.dir/build.make:76: CMakeFiles/gpio_talker.dir/src/gpio_talker.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gpio_talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
