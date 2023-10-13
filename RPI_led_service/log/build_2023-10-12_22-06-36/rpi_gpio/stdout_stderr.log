@@ -1,0 +1,208 @@
+-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rpi_gpio_msgs: 0.0.0 (/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake)
+-- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio
+[ 50%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:8:39:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+    8 |     auto client = node->create_client<[01;31m[Krpi_gpio[m[K::srv::Toggle>("toggle_gpio");
+      |                                       [01;31m[K^~~~~~~~[m[K
+      |                                       [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:8:25:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+    8 |     auto client = node->[01;31m[Kcreate_client<rpi_gpio::srv::Toggle>[m[K("toggle_gpio");
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:8:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_client<<expression error> >(const char [12])[m[K’
+    8 |     auto client = [01;31m[Knode->create_client<rpi_gpio::srv::Toggle>("toggle_gpio")[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:268:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT> typename rclcpp::Client<ServiceT>::SharedPtr rclcpp::Node::create_client(const string&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  268 |   [01;36m[Kcreate_client[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:268:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:8:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    8 |     auto client = [01;31m[Knode->create_client<rpi_gpio::srv::Toggle>("toggle_gpio")[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:282:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT> typename rclcpp::Client<ServiceT>::SharedPtr rclcpp::Node::create_client(const string&, const rclcpp::QoS&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  282 |   [01;36m[Kcreate_client[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:282:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:8:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    8 |     auto client = [01;31m[Knode->create_client<rpi_gpio::srv::Toggle>("toggle_gpio")[m[K;
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:10:25:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   10 |     auto request = std::[01;31m[Kmake_shared<rpi_gpio::srv::Toggle::Request>[m[K();
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:10:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<rpi_gpio>()[m[K’
+   10 |     auto request = [01;31m[Kstd::make_shared<rpi_gpio::srv::Toggle::Request>()[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:165[m[K,
+                 from [01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/client.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   20 |     void handle_service(const std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Request> request,
+      |                                               [01;31m[K^~~~~~~~[m[K
+      |                                               [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     void handle_service(const std::shared_ptr<rpi_gpio::srv::Toggle::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   20 |     void handle_service(const std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Request> request,
+      |                                               [01;31m[K^~~~~~~~[m[K
+      |                                               [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     void handle_service(const std::shared_ptr<rpi_gpio::srv::Toggle::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   20 |     void handle_service(const std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Request> request,
+      |                                               [01;31m[K^~~~~~~~[m[K
+      |                                               [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     void handle_service(const std::shared_ptr<rpi_gpio::srv::Toggle::Request[01;31m[K>[m[K request,
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:31:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   20 |     void handle_service(const [01;31m[Kstd[m[K::shared_ptr<rpi_gpio::srv::Toggle::Request> request,
+      |                               [01;31m[K^~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ has not been declared
+   20 |     void handle_service(const std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Request> request,
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:20:25:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   20 |     void handle_service([01;31m[Kconst[m[K std::shared_ptr<rpi_gpio::srv::Toggle::Request> request,
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   21 |                         std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Response> response)
+      |                                         [01;31m[K^~~~~~~~[m[K
+      |                                         [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |                         std::shared_ptr<rpi_gpio::srv::Toggle::Response[01;31m[K>[m[K response)
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   21 |                         std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Response> response)
+      |                                         [01;31m[K^~~~~~~~[m[K
+      |                                         [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |                         std::shared_ptr<rpi_gpio::srv::Toggle::Response[01;31m[K>[m[K response)
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   21 |                         std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Response> response)
+      |                                         [01;31m[K^~~~~~~~[m[K
+      |                                         [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:72:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |                         std::shared_ptr<rpi_gpio::srv::Toggle::Response[01;31m[K>[m[K response)
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:25:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+   21 |                         [01;31m[Kstd[m[K::shared_ptr<rpi_gpio::srv::Toggle::Response> response)
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ has not been declared
+   21 |                         std::shared_ptr<[01;31m[Krpi_gpio[m[K::srv::Toggle::Response> response)
+      |                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:21:25:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+   21 |                         [01;31m[Kstd[m[K::shared_ptr<rpi_gpio::srv::Toggle::Response> response)
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:34:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   34 |     rclcpp::Service<[01;31m[Krpi_gpio[m[K::srv::Toggle>::SharedPtr service_;
+      |                     [01;31m[K^~~~~~~~[m[K
+      |                     [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:34:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |     rclcpp::Service<rpi_gpio::srv::Toggle[01;31m[K>[m[K::SharedPtr service_;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:34:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   34 |     rclcpp::Service<rpi_gpio::srv::Toggle>::[01;31m[KSharedPtr[m[K service_;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                      [32m[K;[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:34:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ does not name a type
+   34 |     rclcpp::Service<rpi_gpio::srv::Toggle>::SharedPtr [01;31m[Kservice_[m[K;
+      |                                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In constructor ‘[01m[KGPIOServer::GPIOServer()[m[K’:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_[m[K’ was not declared in this scope; did you mean ‘[01m[Kservice_msgs[m[K’?
+   10 |         [01;31m[Kservice_[m[K = this->create_service<rpi_gpio::srv::Toggle>(
+      |         [01;31m[K^~~~~~~~[m[K
+      |         [32m[Kservice_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:41:[m[K [01;31m[Kerror: [m[K‘[01m[Krpi_gpio[m[K’ was not declared in this scope; did you mean ‘[01m[Krpi_gpio_msgs[m[K’?
+   10 |         service_ = this->create_service<[01;31m[Krpi_gpio[m[K::srv::Toggle>(
+      |                                         [01;31m[K^~~~~~~~[m[K
+      |                                         [32m[Krpi_gpio_msgs[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   10 |         service_ = this->[01;31m[Kcreate_service<rpi_gpio::srv::Toggle>[m[K(
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGPIOServer::create_service<<expression error> >(const char [12], std::_Bind_helper<false, void (GPIOServer::*)(...), GPIOServer*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+   10 |         service_ = [01;31m[Kthis->create_service<rpi_gpio::srv::Toggle>([m[K
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   11 | [01;31m[K            "toggle_gpio",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~[m[K                                     
+   12 | [01;31m[K            std::bind(&GPIOServer::handle_service, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  299 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:299:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   10 |         service_ = [01;31m[Kthis->create_service<rpi_gpio::srv::Toggle>([m[K
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   11 | [01;31m[K            "toggle_gpio",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~[m[K                                     
+   12 | [01;31m[K            std::bind(&GPIOServer::handle_service, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:1[m[K:
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rclcpp::QoS&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  315 |   [01;36m[Kcreate_service[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:315:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:10:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   10 |         service_ = [01;31m[Kthis->create_service<rpi_gpio::srv::Toggle>([m[K
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   11 | [01;31m[K            "toggle_gpio",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~[m[K                                     
+   12 | [01;31m[K            std::bind(&GPIOServer::handle_service, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:16:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   16 |         [01;35m[Kline_.request({"ros2_gpio_service", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In member function ‘[01m[Kvoid GPIOServer::handle_service(...)[m[K’:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:23:12:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+   23 |         if([01;31m[Krequest[m[K->toggle)
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   31 |         [01;31m[Kresponse[m[K->success = true;
+      |         [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gpio_client.dir/build.make:76: CMakeFiles/gpio_client.dir/src/client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/gpio_client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/gpio_server.dir/build.make:76: CMakeFiles/gpio_server.dir/src/server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gpio_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

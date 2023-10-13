@@ -1,0 +1,28 @@
+-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+-- Found rpi_gpio_msgs: 0.0.0 (/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake)
+[0mCMake Deprecation Warning at /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (rosidl_target_interfaces)
+
+[0m
+[31mCMake Error at /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:42 (message):
+  rosidl_target_interfaces() the second argument '$rpi_gpio_msgs' must be a
+  valid target name
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (rosidl_target_interfaces)
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/CMakeOutput.log".

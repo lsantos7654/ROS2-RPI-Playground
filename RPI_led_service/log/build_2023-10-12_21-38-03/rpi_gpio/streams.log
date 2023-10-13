@@ -1,0 +1,24 @@
+[0.049s] Invoking command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio
+[0.054s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.125s] -- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+[0.140s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.144s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.150s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.157s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.237s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.238s] -- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.295s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.381s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.385s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.387s] -- Found rpi_gpio_msgs: 0.0.0 (/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake)
+[0.407s] [31mCMake Error at /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.407s]   rosidl_generate_interfaces() the passed file 'srv/LEDToggle.srv' doesn't
+[0.407s]   exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.407s]   '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio'
+[0.407s] Call Stack (most recent call first):
+[0.408s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.408s] 
+[0.408s] [0m
+[0.409s] -- Configuring incomplete, errors occurred!
+[0.409s] See also "/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/CMakeOutput.log".
+[0.411s] Invoked command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio

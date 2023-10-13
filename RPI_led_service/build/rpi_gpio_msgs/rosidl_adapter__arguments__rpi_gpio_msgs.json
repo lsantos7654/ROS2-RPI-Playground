@@ -1,0 +1,6 @@
+{
+  "package_name": "rpi_gpio_msgs",
+  "non_idl_tuples": [
+    "/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs:srv/LEDToggle.srv"
+  ]
+}

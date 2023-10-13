@@ -5,5 +5,6 @@
     "python.analysis.extraPaths": [
         "/opt/ros/iron/lib/python3.10/site-packages"
     ],
-    "cmake.sourceDirectory": "/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control"
+    "cmake.sourceDirectory": "/home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control",
+    "ros.distro": "iron"
 }

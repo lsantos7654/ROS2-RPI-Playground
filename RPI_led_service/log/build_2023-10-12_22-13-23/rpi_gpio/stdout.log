@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target gpio_server[0m
+[35m[1mConsolidate compiler generated dependencies of target gpio_client[0m
+[ 50%] Built target gpio_client
+[ 75%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gpio_server[0m
+[100%] Built target gpio_server
+-- Install configuration: ""
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server
+-- Set runtime path of "/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server" to ""
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client
+-- Set runtime path of "/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client" to ""
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+-- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml
