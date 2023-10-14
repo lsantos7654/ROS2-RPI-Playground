@@ -1,6 +1,0 @@
-[0.027s] Invoking command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24
-[0.032s] [0mCMake Error: The current CMakeCache.txt directory /home/lsantos/Sandbox/RPI_led/build/gpio_control/CMakeCache.txt is different than the directory /home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.111s] [0mCMake Error: The source directory "/home/lsantos/Documents/GitHub/Sandbox/RPI_led/src/gpio_control" does not exist.
-[0.111s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.111s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
-[0.113s] Invoked command in '/home/lsantos/Sandbox/RPI_led/build/gpio_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Sandbox/RPI_led/build/gpio_control -- -j24 -l24

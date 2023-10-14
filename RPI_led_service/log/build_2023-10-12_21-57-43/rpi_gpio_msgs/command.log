@@ -1,4 +1,0 @@
-Invoking command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs -- -j24 -l24
-Invoked command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs -- -j24 -l24
-Invoking command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs
-Invoked command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs

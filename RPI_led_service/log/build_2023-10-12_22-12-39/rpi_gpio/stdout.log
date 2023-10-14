@@ -1,6 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target gpio_server[0m
-[35m[1mConsolidate compiler generated dependencies of target gpio_client[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable gpio_client[0m
-[ 75%] Built target gpio_client

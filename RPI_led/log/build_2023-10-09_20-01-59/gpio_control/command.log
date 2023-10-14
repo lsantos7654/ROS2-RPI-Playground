@@ -1,2 +1,0 @@
-Invoking command in '/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control -- -j4 -l4
-Invoked command in '/home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/lsantos/Documents/GitHub/Sandbox/RPI_led/build/gpio_control -- -j4 -l4
