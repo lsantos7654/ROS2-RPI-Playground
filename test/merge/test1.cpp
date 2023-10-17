@@ -36,8 +36,8 @@ public:
 
     ~LED()
     {
-        line1.set_value(0);
-        line2.set_value(0);
+        //line1.set_value(0);
+        //line2.set_value(0);
     }
 };
 
@@ -60,40 +60,37 @@ int main()
     int value2 = 0;
     int choice = 0;
         
-    while(1)
+    std::cin >> choice;
+    
+    if (choice == 1)
     {
-        std::cin >> choice;
-        
-        if (choice == 1)
-        {
-            value1 = !value1; // Toggle value
-            led->line1.set_value(value1);
-            std::cout << "LED 17 set to " << (value1 ? "ON" : "OFF") << std::endl;
-        }
-        else if (choice == 2)
-        {
-            value2 = !value2; // Toggle value
-            led->line2.set_value(value2);
-            std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
-        }
-        else if (choice == 3)
-        {
-            std::cout << "LED 17 is set to " << led->line1.get_value() << std::endl;
-        }
-        else if (choice == 4)
-        {
-            std::cout << "LED 27 is set to " << led->line2.get_value() << std::endl;
-        }else if (choice == 5)
-        {
-            std::cout << "GPIO 23 is set to " << led->line3.get_value() << std::endl;
-        }
-        else
-        {
-	        std::cout << "invalid argument" << std::endl;
-	    }
-
-        std::cin.get();
+        value1 = !value1; // Toggle value
+        led->line1.set_value(value1);
+        std::cout << "LED 17 set to " << (value1 ? "ON" : "OFF") << std::endl;
     }
+    else if (choice == 2)
+    {
+        value2 = !value2; // Toggle value
+        led->line2.set_value(value2);
+        std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
+    }
+    else if (choice == 3)
+    {
+        std::cout << "LED 17 is set to " << led->line1.get_value() << std::endl;
+    }
+    else if (choice == 4)
+    {
+        std::cout << "LED 27 is set to " << led->line2.get_value() << std::endl;
+    }else if (choice == 5)
+    {
+        std::cout << "GPIO 23 is set to " << led->line3.get_value() << std::endl;
+    }
+    else
+    {
+        std::cout << "invalid argument" << std::endl;
+    }
+
+    //std::cin.get();
 
     delete led;
 
