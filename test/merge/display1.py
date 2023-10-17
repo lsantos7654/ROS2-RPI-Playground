@@ -22,6 +22,12 @@ device.clear()
 
 print("1: LED 17\n2: LED_27\n3: Status LED 17\n4: Status LED 27\n5: Status GPIO 23")
 
+draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
+draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)
+draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
+
+device.display(image)
+
 while (1):
 
     #Run the C++ program as a subprocess
@@ -31,15 +37,20 @@ while (1):
     string_c = stdout.decode().strip
 
     if (string_c == "LED 17 set to ON"):
+        print("17_test")
         draw.text((10, 10), "GPIO_17 = 1", fill="white", font=font)
         draw.text((10, 40), "GPIO_23 = 1", fill="white", font=font)
     elif (string_c == "LED 17 set to OFF"):
+        print("17_test_off")
         draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
         draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
     elif (string_c == "LED 27 is set to ON"):
+        print("27_test")
         draw.text((10, 25), "GPIO_27 = 1", fill="white", font=font)
     elif (string_c == "LED 27 is set to OFF"):
+        print("27_test_off")
         draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)    
+    
     device.display(image)
 
 # Clean up
