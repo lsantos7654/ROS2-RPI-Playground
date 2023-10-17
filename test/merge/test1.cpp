@@ -39,6 +39,7 @@ public:
     {
         line1.set_value(0);
         line2.set_value(0);
+        system("python3 display1.py 99 0");
     }
 };
 

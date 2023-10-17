@@ -49,5 +49,7 @@ draw.text((10, 25), "GPIO_27 = "+str(gpio27), fill="white", font=font)
 draw.text((10, 40), "GPIO_23 = "+str(gpio23), fill="white", font=font)
 device.display(image)
 
-#device.cleanup = do_nothing
-device.cleanup()
+if(GPIO_choice != 99):
+    device.cleanup = do_nothing
+else:
+    device.cleanup()
