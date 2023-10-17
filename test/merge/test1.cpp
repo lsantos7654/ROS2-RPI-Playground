@@ -97,9 +97,9 @@ int main()
         else
         {
 	        std::cout << "invalid argument" << std::endl;
-	    }
+	}
 
-        std::cin.get();
+        //std::cin.get();
     }
 
     delete led;

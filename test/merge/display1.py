@@ -20,29 +20,37 @@ draw = ImageDraw.Draw(image)
 font = ImageFont.load_default()
 
 # Clear the display
-device.clear()
+#device.clear()
 
-if(GPIO_choice == 0):
+def do_nothing(obj):
+   pass
+
+
+if(GPIO_choice == "0"):
+    device.clear()
     draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
     draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)
     draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
 
-if(GPIO_choice == 17):
-    if (LED_choice == 0):
+if(GPIO_choice == "17"):
+    if (LED_choice == "0"):
         draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
+        draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)
         draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
-    if (LED_choice == 1):
+    if (LED_choice == "1"):
         draw.text((10, 10), "GPIO_17 = 1", fill="white", font=font)
         draw.text((10, 40), "GPIO_23 = 1", fill="white", font=font)
 
-if(GPIO_choice == 27):
-    if (LED_choice == 0):
+if(GPIO_choice == "27"):
+    if (LED_choice == "0"):
         draw.text((10, 10), "GPIO_27 = 0", fill="white", font=font)
-    if (LED_choice == 1):
+    if (LED_choice == "1"):
         draw.text((10, 10), "GPIO_27 = 1", fill="white", font=font)
 
 device.display(image)
 
-if(GPIO_choice == 99):
+device.cleanup = do_nothing
+
+#if(GPIO_choice == "99"):
     # Clean up
-    device.cleanup()
+    #device.cleanup()
