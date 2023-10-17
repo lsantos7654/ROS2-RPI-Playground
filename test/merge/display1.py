@@ -3,8 +3,10 @@ from luma.oled.device import ssd1306, sh1106
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
-import time
-import subprocess
+import sys
+
+GPIO_choice = sys.argv[1]
+LED_choice = sys.argv[2]
 
 # Initialize the display
 serial = i2c(port=1, address=0x3C)  # Use the correct I2C address for your display
@@ -20,38 +22,27 @@ font = ImageFont.load_default()
 # Clear the display
 device.clear()
 
-print("1: LED 17\n2: LED_27\n3: Status LED 17\n4: Status LED 27\n5: Status GPIO 23")
+if(GPIO_choice == 0):
+    draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
+    draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)
+    draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
 
-draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
-draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)
-draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
+if(GPIO_choice == 17):
+    if (LED_choice == 0):
+        draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
+        draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
+    if (LED_choice == 1):
+        draw.text((10, 10), "GPIO_17 = 1", fill="white", font=font)
+        draw.text((10, 40), "GPIO_23 = 1", fill="white", font=font)
+
+if(GPIO_choice == 27):
+    if (LED_choice == 0):
+        draw.text((10, 10), "GPIO_27 = 0", fill="white", font=font)
+    if (LED_choice == 1):
+        draw.text((10, 10), "GPIO_27 = 1", fill="white", font=font)
 
 device.display(image)
 
-while (1):
-
-    #Run the C++ program as a subprocess
-    process = subprocess.Popen("./a.out", stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-    stdout, stderr = process.communicate()
-
-    string_c = stdout.decode().strip
-
-    if (string_c == "LED 17 set to ON"):
-        print("17_test")
-        draw.text((10, 10), "GPIO_17 = 1", fill="white", font=font)
-        draw.text((10, 40), "GPIO_23 = 1", fill="white", font=font)
-    elif (string_c == "LED 17 set to OFF"):
-        print("17_test_off")
-        draw.text((10, 10), "GPIO_17 = 0", fill="white", font=font)
-        draw.text((10, 40), "GPIO_23 = 0", fill="white", font=font)
-    elif (string_c == "LED 27 is set to ON"):
-        print("27_test")
-        draw.text((10, 25), "GPIO_27 = 1", fill="white", font=font)
-    elif (string_c == "LED 27 is set to OFF"):
-        print("27_test_off")
-        draw.text((10, 25), "GPIO_27 = 0", fill="white", font=font)    
-    
-    device.display(image)
-
-# Clean up
-device.cleanup()
+if(GPIO_choice == 99):
+    # Clean up
+    device.cleanup()
