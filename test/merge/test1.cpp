@@ -39,7 +39,6 @@ public:
     {
         line1.set_value(0);
         line2.set_value(0);
-        system("python3 display1.py 99 0");
     }
 };
 
@@ -81,7 +80,7 @@ int main()
             value2 = !value2; // Toggle value
             led->line2.set_value(value2);
             std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
-            system(("python3 display1.py 27 "+std::to_string(value1)).c_str());
+            system(("python3 display1.py 27 "+std::to_string(value2)).c_str());
         }
         else if (choice == 3)
         {
