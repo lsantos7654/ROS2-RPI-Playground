@@ -20,7 +20,9 @@ font = ImageFont.load_default()
 device.clear()
 
 # Display "Hello"
-draw.text((10, 10), "I Love You", fill="white", font=font)
+draw.text((15, 10), "I Love You Lisa!", fill="white", font=font)
+draw.text((15, 25), "I Love You Lisa!", fill="white", font=font)
+draw.text((15, 40), "I Love You Lisa!", fill="white", font=font)
 device.display(image)
 
 time.sleep(5)
