@@ -39,9 +39,19 @@ public:
     {
         line1.set_value(0);
         line2.set_value(0);
-        system("python3 display1.py 99 0");
+        system("python3 display1.py 99 0 0");
     }
 };
+
+void systemCall(int gpio17, int gpio27, int gpio23)
+{
+    std::string arg1 = std::to_string(gpio17);
+    std::string arg2 = std::to_string(gpio27);
+    std::string arg3 = std::to_string(gpio23);
+
+    system(("python3 display1.py "+arg1+" "+arg2+" "+arg3).c_str());
+}
+
 
 LED* led = nullptr;
 
@@ -63,7 +73,7 @@ int main()
     int choice = 0;
 
     std::cout << "1: LED 17\n2: LED_27\n3: Status LED 17\n4: Status LED 27\n5: Status GPIO 23" << std::endl;
-    system("python3 display1.py 0 0");
+    systemCall(value1, value2, value1);
         
     while(1)
     {
@@ -74,14 +84,14 @@ int main()
             value1 = !value1; // Toggle value
             led->line1.set_value(value1);
             std::cout << "LED 17 set to " << (value1 ? "ON" : "OFF") << std::endl;
-            system(("python3 display1.py 17 "+std::to_string(value1)).c_str());
+            systemCall(value1, value2, value1);
         }
         else if (choice == 2)
         {
             value2 = !value2; // Toggle value
             led->line2.set_value(value2);
             std::cout << "LED 27 set to " << (value2 ? "ON" : "OFF") << std::endl;
-            system(("python3 display1.py 27 "+std::to_string(value2)).c_str());
+            systemCall(value1, value2, value1);
         }
         else if (choice == 3)
         {
