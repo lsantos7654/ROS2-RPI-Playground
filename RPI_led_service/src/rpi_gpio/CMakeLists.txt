@@ -8,7 +8,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rclpy REQUIRED)
 find_package(rpi_gpio_msgs REQUIRED)
 
 
@@ -28,15 +27,6 @@ install(TARGETS
   gpio_server
   gpio_client
   DESTINATION lib/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-  src/displayclient.py
-  DESTINATION lib/${PROJECT_NAME}/
-)
-
-install(FILES "resource/${PROJECT_NAME}"
-  DESTINATION "share/ament_index/resource_index/packages/"
 )
 
 
