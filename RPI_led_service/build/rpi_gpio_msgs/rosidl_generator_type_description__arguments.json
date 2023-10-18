@@ -1,0 +1,11 @@
+{
+  "package_name": "rpi_gpio_msgs",
+  "output_dir": "/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs/rosidl_generator_type_description/rpi_gpio_msgs",
+  "idl_tuples": [
+    "/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio_msgs/rosidl_adapter/rpi_gpio_msgs:srv/LEDToggle.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces"
+  ]
+}

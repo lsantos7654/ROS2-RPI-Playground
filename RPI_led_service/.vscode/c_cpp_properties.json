@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/**",
+                "/opt/ros/iron/include/**",
+                "/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/include/**",
+                "/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

@@ -8,7 +8,25 @@ int main(int argc, char **argv)
     auto client = node->create_client<rpi_gpio_msgs::srv::LEDToggle>("toggle_gpio");
     
     auto request = std::make_shared<rpi_gpio_msgs::srv::LEDToggle::Request>();
-    request->toggle = true; // Set to false to turn off.
+
+    int gpioChoice = 0;
+    bool gpioStatus = 0;
+
+    if (argc > 1){
+        gpioChoice = std::stoi(argv[1]);
+        gpioStatus = std::stoi(argv[2]);
+    }
+
+    request->toggle = gpioStatus;
+
+    if (gpioChoice == 17)
+    {
+        request->gpiochoice = 17; 
+    }
+    else if (gpioChoice == 27)
+    {
+        request->gpiochoice = 27;
+    }
 
     if(client->wait_for_service(std::chrono::seconds(1)))
     {

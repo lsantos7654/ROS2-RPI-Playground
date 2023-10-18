@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000069] (-) JobUnselected: {'identifier': 'rpi_gpio'}
+[0.000082] (-) JobUnselected: {'identifier': 'rpi_gpio_msgs'}
+[0.000090] (-) EventReactorShutdown: {}

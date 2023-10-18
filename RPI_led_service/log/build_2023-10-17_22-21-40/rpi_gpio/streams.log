@@ -1,0 +1,29 @@
+[0.049s] Invoking command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio -- -j24 -l24
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target gpio_client[0m
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target gpio_server[0m
+[0.072s] [ 50%] Built target gpio_server
+[0.072s] [ 75%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
+[2.045s] [100%] [32m[1mLinking CXX executable gpio_client[0m
+[2.122s] [100%] Built target gpio_client
+[2.127s] Invoked command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio -- -j24 -l24
+[2.137s] Invoking command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio
+[2.141s] -- Install configuration: ""
+[2.141s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server
+[2.141s] -- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client
+[2.142s] -- Set runtime path of "/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client" to ""
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+[2.142s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+[2.143s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+[2.143s] -- Installing: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv
+[2.143s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+[2.143s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+[2.143s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+[2.143s] -- Up-to-date: /home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml
+[2.143s] Invoked command in '/home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/RPI_led_service/build/rpi_gpio
