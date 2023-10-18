@@ -22,10 +22,11 @@ class LCDDisplay(Node):
         
         # Load a font
         self.font = ImageFont.load_default()
-        self.srv = self.create_service(LEDToggle, 'update_lcd_display', self.update_lcd_display_callback)
+        self.srv = self.create_service(LEDToggle, 'update_lcd', self.update_lcd_display_callback)
 
 
     def update_lcd_display_callback(self, request, response):
+        self.draw.rectangle([(0,0), (self.device.width, self.device.height)], fill=0)
         gpio17 = request.gpiochoice == 17 and request.toggle
         gpio27 = request.gpiochoice == 27 and request.toggle
         gpio23 = request.gpiochoice == 17 and request.toggle
@@ -35,12 +36,6 @@ class LCDDisplay(Node):
         response.success = True
         return response
 
-    def update_display(self, gpio17, gpio27, gpio23):
-        self.device.clear()
-        self.draw.text((10, 10), f"GPIO_17 = {gpio17}", fill="white", font=self.font)
-        self.draw.text((10, 25), f"GPIO_27 = {gpio27}", fill="white", font=self.font)
-        self.draw.text((10, 40), f"GPIO_23 = {gpio23}", fill="white", font=self.font)
-        self.device.display(self.image)
 
 def main(args=None):
     rclpy.init(args=args)

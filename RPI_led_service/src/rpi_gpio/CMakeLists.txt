@@ -35,6 +35,10 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}/
 )
 
+install(FILES "resource/${PROJECT_NAME}"
+  DESTINATION "share/ament_index/resource_index/packages/"
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
