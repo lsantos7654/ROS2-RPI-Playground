@@ -8,7 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-#find_package(rosidl_default_generators REQUIRED)
+find_package(rclpy REQUIRED)
 find_package(rpi_gpio_msgs REQUIRED)
 
 
@@ -24,13 +24,15 @@ target_link_libraries(gpio_client gpiodcxx)
 ament_target_dependencies(gpio_server rclcpp rpi_gpio_msgs)
 ament_target_dependencies(gpio_client rclcpp rpi_gpio_msgs)
 
-#rosidl_target_interfaces(gpio_server ${PROJECT_NAME} "rosidl_typesupport_cpp")
-#rosidl_target_interfaces(gpio_client ${PROJECT_NAME} "rosidl_typesupport_cpp")
-
 install(TARGETS
   gpio_server
   gpio_client
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  src/displayclient.py
+  DESTINATION lib/${PROJECT_NAME}/
 )
 
 
