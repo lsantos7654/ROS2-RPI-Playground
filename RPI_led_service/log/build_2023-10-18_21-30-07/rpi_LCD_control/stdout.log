@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/rpi_LCD_control/rpi_LCD_control.egg-info
+writing ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/dependency_links.txt
+writing entry points to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/entry_points.txt
+writing requirements to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/requires.txt
+writing top-level names to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/top_level.txt
+writing manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build
+creating /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib
+creating /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control
+copying rpi_LCD_control/__init__.py -> /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control
+creating /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts
+copying rpi_LCD_control/scripts/displayclient.py -> /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts
+copying rpi_LCD_control/scripts/__init__.py -> /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts
+running install
+running install_lib
+creating /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control
+creating /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts
+copying /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts/displayclient.py -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts
+copying /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts/__init__.py -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts
+copying /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/__init__.py -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control
+byte-compiling /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts/displayclient.py to displayclient.cpython-310.pyc
+byte-compiling /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/share/ament_index
+creating /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/share/ament_index/resource_index
+creating /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/share/ament_index/resource_index/packages
+copying resource/rpi_LCD_control -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/share/rpi_LCD_control
+running install_egg_info
+Copying ../../build/rpi_LCD_control/rpi_LCD_control.egg-info to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing displayclient script to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/rpi_LCD_control
+writing list of installed files to '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log'

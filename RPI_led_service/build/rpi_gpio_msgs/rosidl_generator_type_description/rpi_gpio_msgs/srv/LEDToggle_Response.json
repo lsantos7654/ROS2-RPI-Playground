@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "rpi_gpio_msgs/srv/LEDToggle_Response",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "rpi_gpio_msgs/srv/LEDToggle_Response",
+      "hash_string": "RIHS01_4658a51ab024feeb0100b78902b26feab3f3f40e9128a3a5c37658ba5d0844e0"
+    }
+  ]
+}

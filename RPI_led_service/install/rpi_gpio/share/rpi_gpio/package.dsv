@@ -1,0 +1,8 @@
+source;share/rpi_gpio/hook/cmake_prefix_path.ps1
+source;share/rpi_gpio/hook/cmake_prefix_path.dsv
+source;share/rpi_gpio/hook/cmake_prefix_path.sh
+source;share/rpi_gpio/local_setup.bash
+source;share/rpi_gpio/local_setup.dsv
+source;share/rpi_gpio/local_setup.ps1
+source;share/rpi_gpio/local_setup.sh
+source;share/rpi_gpio/local_setup.zsh

@@ -1,0 +1,4 @@
+source;share/rpi_gpio_msgs/local_setup.bash
+source;share/rpi_gpio_msgs/local_setup.dsv
+source;share/rpi_gpio_msgs/local_setup.sh
+source;share/rpi_gpio_msgs/local_setup.zsh

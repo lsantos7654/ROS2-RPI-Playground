@@ -1,0 +1,11 @@
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/uninstall.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/rpi_gpio_uninstall.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/gpio_server.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/gpio_client.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/test.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/edit_cache.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/rebuild_cache.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/list_install_components.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/install.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/install/local.dir
+/home/pi/Sandbox/RPI_led_service/build/rpi_gpio/CMakeFiles/install/strip.dir
