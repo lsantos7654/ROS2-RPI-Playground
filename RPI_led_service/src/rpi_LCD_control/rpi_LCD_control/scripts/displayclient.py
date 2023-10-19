@@ -15,6 +15,9 @@ class LCDDisplay(Node):
         # Initialize the display
         self.serial = i2c(port=1, address=0x3C)  # Use the correct I2C address for your display
         self.device = ssd1306(self.serial)
+        self.__gpio17 = False
+        self.__gpio27 = False
+        self.__gpio23 = False
         
         # Create an image buffer
         self.image = Image.new("1", (self.device.width, self.device.height))
@@ -26,20 +29,22 @@ class LCDDisplay(Node):
 
 
     def update_lcd_display_callback(self, request, response):
-        gpio17 = request.gpiochoice == 17 and request.toggle
-        gpio27 = request.gpiochoice == 27 and request.toggle
-        gpio23 = request.gpiochoice == 17 and request.toggle
+        if request.gpiochoice == 27:
+            self.__gpio27 = request.toggle
+        if request.gpiochoice == 17:
+            self.__gpio17 = request.toggle
+        self.__gpio23 = self.__gpio17
 
-        self.update_display(gpio17, gpio27, gpio23)
+        self.update_display()
 
         response.success = True
         return response
 
-    def update_display(self, gpio17, gpio27, gpio23):
+    def update_display(self):
         self.draw.rectangle([(0,0), (self.device.width, self.device.height)], fill=0)
-        self.draw.text((10, 10), f"GPIO_17 = {gpio17}", fill="white", font=self.font)
-        self.draw.text((10, 25), f"GPIO_27 = {gpio27}", fill="white", font=self.font)
-        self.draw.text((10, 40), f"GPIO_23 = {gpio23}", fill="white", font=self.font)
+        self.draw.text((10, 10), f"GPIO_17 = {self.__gpio17}", fill="white", font=self.font)
+        self.draw.text((10, 25), f"GPIO_27 = {self.__gpio27}", fill="white", font=self.font)
+        self.draw.text((10, 40), f"GPIO_23 = {self.__gpio23}", fill="white", font=self.font)
         self.device.display(self.image)
 
 def main(args=None):
@@ -47,7 +52,7 @@ def main(args=None):
 
     lcd_display = LCDDisplay()
     
-    lcd_display.update_display(False, False, False) 
+    lcd_display.update_display() 
 
     rclpy.spin(lcd_display)
 

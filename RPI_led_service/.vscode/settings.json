@@ -1,5 +1,5 @@
 {
-    "cmake.sourceDirectory": "/home/lsantos/Documents/GitHub/Sandbox/RPI_led_service/src/rpi_gpio",
+    "cmake.sourceDirectory": "/home/pi/Sandbox/RPI_led_service/src/rpi_gpio",
     "python.autoComplete.extraPaths": [
         "/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages",
         "/opt/ros/iron/lib/python3.10/site-packages"
@@ -9,5 +9,8 @@
         "/opt/ros/iron/lib/python3.10/site-packages"
     ],
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
-    "ros.distro": "iron"
+    "ros.distro": "iron",
+    "files.associations": {
+        "future": "cpp"
+    }
 }

@@ -37,7 +37,11 @@ int main(int argc, char **argv)
         auto result = gpio_client->async_send_request(request);
         if(rclcpp::spin_until_future_complete(node, result) == rclcpp::FutureReturnCode::SUCCESS)
         {
-            RCLCPP_INFO(node->get_logger(), "GPIO toggled successfully");
+            if(result.get()){
+                RCLCPP_INFO(node->get_logger(), ("GPIO "+std::to_string(gpioChoice)+" is on").c_str());
+            }else{
+                RCLCPP_INFO(node->get_logger(), ("GPIO "+std::to_string(gpioChoice)+" is off").c_str());
+            }
 
             // Notify the LCD server of the change
             if(lcd_client->wait_for_service(std::chrono::seconds(1)))
