@@ -54,12 +54,8 @@ private:
             if (request->toggle) line2.set_value(1);
             else line2.set_value(0);
         }
-        else if(request->gpiochoice == 23)
-        {
-            line2.set_value(1);
-        }
         
-        if (request->gpiochoice = 23)
+        if (request->gpiochoice == 23)
         {
             response->success = gpio17;
         }

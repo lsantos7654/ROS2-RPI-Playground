@@ -37,7 +37,7 @@ int main(int argc, char **argv)
         auto result = gpio_client->async_send_request(request);
         if(rclcpp::spin_until_future_complete(node, result) == rclcpp::FutureReturnCode::SUCCESS)
         {
-            if(result.get()){
+            if(result.get()->success){
                 RCLCPP_INFO(node->get_logger(), ("GPIO "+std::to_string(gpioChoice)+" is on").c_str());
             }else{
                 RCLCPP_INFO(node->get_logger(), ("GPIO "+std::to_string(gpioChoice)+" is off").c_str());
