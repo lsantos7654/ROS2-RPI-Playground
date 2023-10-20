@@ -1,0 +1,48 @@
+[2.815s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[3.047s] [35m[1mConsolidate compiler generated dependencies of target gpio_server[0m
+[3.143s] [ 25%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
+[3.164s] [ 50%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
+[21.078s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In constructor ‘[01m[KGPIOServer::GPIOServer()[m[K’:
+[21.079s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:24:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.079s]    24 |         [01;35m[Kline1.request({"LED_17_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+[21.080s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.081s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:25:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.081s]    25 |         [01;35m[Kline2.request({"LED_27_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+[21.082s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.082s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:26:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[21.083s]    26 |         [01;35m[Kline3.request({"LED_23_status", gpiod::line_request::DIRECTION_INPUT})[m[K;
+[21.084s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.102s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In member function ‘[01m[Kvoid GPIOServer::handle_service(std::shared_ptr<rpi_gpio_msgs::srv::LEDToggle_Request_<std::allocator<void> > >, std::shared_ptr<rpi_gpio_msgs::srv::LEDToggle_Response_<std::allocator<void> > >)[m[K’:
+[21.103s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:47:38:[m[K [01;35m[Kwarning: [m[Kcomparison of constant ‘[01m[K2[m[K’ with boolean expression is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wbool-compare-Wbool-compare]8;;[m[K]
+[21.104s]    47 |             else if ([01;35m[Krequest->toggle == 2[m[K)
+[21.104s]       |                      [01;35m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[21.105s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:66:38:[m[K [01;35m[Kwarning: [m[Kcomparison of constant ‘[01m[K2[m[K’ with boolean expression is always false [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wbool-compare-Wbool-compare]8;;[m[K]
+[21.106s]    66 |             else if ([01;35m[Krequest->toggle == 2[m[K)
+[21.106s]       |                      [01;35m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[27.799s] [ 75%] [32m[1mLinking CXX executable gpio_server[0m
+[28.804s] [ 75%] Built target gpio_server
+[30.515s] [100%] [32m[1mLinking CXX executable gpio_client[0m
+[31.411s] [100%] Built target gpio_client
+[31.450s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[31.617s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio
+[31.646s] -- Install configuration: ""
+[31.647s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server
+[31.658s] -- Set runtime path of "/home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server" to ""
+[31.659s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client
+[31.671s] -- Set runtime path of "/home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client" to ""
+[31.672s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+[31.672s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+[31.673s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+[31.674s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+[31.674s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+[31.675s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+[31.675s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+[31.675s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+[31.676s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+[31.678s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+[31.678s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv
+[31.679s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+[31.679s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+[31.680s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+[31.680s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml
+[31.684s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio

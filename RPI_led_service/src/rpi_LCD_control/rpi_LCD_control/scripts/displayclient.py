@@ -30,9 +30,16 @@ class LCDDisplay(Node):
 
     def update_lcd_display_callback(self, request, response):
         if request.gpiochoice == 27:
-            self.__gpio27 = request.toggle
+            if (request.toggle == 1):
+                self.__gpio27 = True
+            elif (request.toggle == 0):
+                self.__gpio27 = False
         if request.gpiochoice == 17:
-            self.__gpio17 = request.toggle
+            if (request.toggle == 1):
+                self.__gpio27 = True
+            elif (request.toggle == 0):
+                self.__gpio27 = False
+        
         self.__gpio23 = self.__gpio17
 
         self.update_display()
@@ -54,11 +61,16 @@ def main(args=None):
     
     lcd_display.update_display() 
 
-    rclpy.spin(lcd_display)
+    try:
+        rclpy.spin(lcd_display)
+    except KeyboardInterrupt:
+        print("Shut Down")
+    finally:
+        # Clean up and shut down
+        lcd_display.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
 
-    # Clean up and shut down
-    lcd_display.destroy_node()
-    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

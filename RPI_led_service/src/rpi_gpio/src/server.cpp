@@ -21,6 +21,7 @@ public:
         line2 = chip.get_line(GPIO_PIN_27);
         line3 = chip.get_line(GPIO_PIN_23);
         gpio17 = false;
+        gpio27 = false;
         line1.request({"LED_17_toggle", gpiod::line_request::DIRECTION_OUTPUT});
         line2.request({"LED_27_toggle", gpiod::line_request::DIRECTION_OUTPUT});
         line3.request({"LED_23_status", gpiod::line_request::DIRECTION_INPUT});
@@ -38,30 +39,45 @@ private:
     {
         if(request->gpiochoice == 17)
         {
-            if (request->toggle)
+            if (request->toggle == 1)
             {
                 line1.set_value(1);
                 gpio17 = request->toggle;
+                response->success = gpio17;
             }
-            else
+            else if (request->toggle == 2)
+            {
+                response->success = gpio17;
+            }
+            else if (request->toggle == 0)
             {
                 line1.set_value(0);
                 gpio17 = request->toggle;
+                response->success = gpio17;
             }
         }
         else if(request->gpiochoice == 27)
         {
-            if (request->toggle) line2.set_value(1);
-            else line2.set_value(0);
+            if (request->toggle == 1)
+            {
+                line2.set_value(1);
+                gpio27 = request->toggle;
+                response->success = gpio27;
+            }
+            else if (request->toggle == 2)
+            {
+                response->success = gpio27;
+            }
+            else if (request->toggle == 0)
+            {
+                line2.set_value(0);
+                gpio27 = request->toggle;
+                response->success = gpio27;
+            }
         }
-        
-        if (request->gpiochoice == 23)
+        else if (request->gpiochoice == 23)
         {
             response->success = gpio17;
-        }
-        else
-        {
-            response->success = request->toggle;
         }
     }
 
@@ -72,6 +88,7 @@ private:
     gpiod::line line2;
     gpiod::line line3;
     bool gpio17;
+    bool gpio27;
 };
 
 int main(int argc, char **argv)

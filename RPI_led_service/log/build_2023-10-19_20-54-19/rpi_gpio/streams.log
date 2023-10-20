@@ -1,0 +1,24 @@
+[3.809s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[4.088s] [ 50%] Built target gpio_server
+[4.108s] [100%] Built target gpio_client
+[4.162s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[4.338s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio
+[4.389s] -- Install configuration: ""
+[4.393s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server
+[4.399s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client
+[4.404s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+[4.408s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+[4.411s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+[4.415s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+[4.418s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+[4.421s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+[4.424s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+[4.428s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+[4.431s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+[4.434s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+[4.438s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv
+[4.443s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+[4.446s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+[4.449s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+[4.452s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml
+[4.467s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio

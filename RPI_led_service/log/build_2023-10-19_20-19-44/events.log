@@ -1,0 +1,539 @@
+[0.000000] (-) TimerEvent: {}
+[0.001680] (rpi_gpio_msgs) JobQueued: {'identifier': 'rpi_gpio_msgs', 'dependencies': OrderedDict()}
+[0.002282] (rpi_LCD_control) JobQueued: {'identifier': 'rpi_LCD_control', 'dependencies': OrderedDict([('rpi_gpio_msgs', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs')])}
+[0.002651] (rpi_gpio) JobQueued: {'identifier': 'rpi_gpio', 'dependencies': OrderedDict([('rpi_gpio_msgs', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs')])}
+[0.003000] (rpi_gpio_msgs) JobStarted: {'identifier': 'rpi_gpio_msgs'}
+[0.098958] (-) TimerEvent: {}
+[0.200462] (-) TimerEvent: {}
+[0.303832] (-) TimerEvent: {}
+[0.326508] (rpi_gpio_msgs) JobProgress: {'identifier': 'rpi_gpio_msgs', 'progress': 'cmake'}
+[0.330684] (rpi_gpio_msgs) JobProgress: {'identifier': 'rpi_gpio_msgs', 'progress': 'build'}
+[0.334246] (rpi_gpio_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.2 51880 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '99'), ('PATH', '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51880 192.168.1.81 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron')]), 'shell': False}
+[0.404062] (-) TimerEvent: {}
+[0.504946] (-) TimerEvent: {}
+[0.606162] (-) TimerEvent: {}
+[0.613820] (rpi_gpio_msgs) StdoutLine: {'line': b'[  2%] Built target rpi_gpio_msgs__rosidl_generator_type_description\n'}
+[0.706388] (-) TimerEvent: {}
+[0.712332] (rpi_gpio_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_rpi_gpio_msgs\n'}
+[0.743284] (rpi_gpio_msgs) StdoutLine: {'line': b'[  5%] Built target rpi_gpio_msgs__cpp\n'}
+[0.765261] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 20%] Built target rpi_gpio_msgs__rosidl_generator_c\n'}
+[0.806756] (-) TimerEvent: {}
+[0.900598] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 29%] Built target rpi_gpio_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.906946] (-) TimerEvent: {}
+[0.908534] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 38%] Built target rpi_gpio_msgs__rosidl_typesupport_cpp\n'}
+[0.947429] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 47%] Built target rpi_gpio_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.007212] (-) TimerEvent: {}
+[1.103825] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 55%] Built target rpi_gpio_msgs__rosidl_typesupport_c\n'}
+[1.107408] (-) TimerEvent: {}
+[1.117575] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 64%] Built target rpi_gpio_msgs__rosidl_typesupport_introspection_c\n'}
+[1.174303] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 73%] Built target rpi_gpio_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.209321] (-) TimerEvent: {}
+[1.310966] (-) TimerEvent: {}
+[1.325153] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 73%] Built target rpi_gpio_msgs\n'}
+[1.411472] (-) TimerEvent: {}
+[1.438243] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 76%] Built target rpi_gpio_msgs__py\n'}
+[1.511667] (-) TimerEvent: {}
+[1.570383] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 82%] Built target rpi_gpio_msgs__rosidl_generator_py\n'}
+[1.611877] (-) TimerEvent: {}
+[1.712770] (-) TimerEvent: {}
+[1.761383] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 88%] Built target rpi_gpio_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.813106] (-) TimerEvent: {}
+[1.824712] (rpi_gpio_msgs) StdoutLine: {'line': b'[ 94%] Built target rpi_gpio_msgs__rosidl_typesupport_c__pyext\n'}
+[1.838894] (rpi_gpio_msgs) StdoutLine: {'line': b'[100%] Built target rpi_gpio_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.913291] (-) TimerEvent: {}
+[2.014736] (-) TimerEvent: {}
+[2.116135] (-) TimerEvent: {}
+[2.217536] (-) TimerEvent: {}
+[2.319287] (-) TimerEvent: {}
+[2.420710] (-) TimerEvent: {}
+[2.522120] (-) TimerEvent: {}
+[2.608340] (rpi_gpio_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.612274] (rpi_gpio_msgs) StdoutLine: {'line': b'writing rpi_gpio_msgs.egg-info/PKG-INFO\n'}
+[2.613649] (rpi_gpio_msgs) StdoutLine: {'line': b'writing dependency_links to rpi_gpio_msgs.egg-info/dependency_links.txt\n'}
+[2.614960] (rpi_gpio_msgs) StdoutLine: {'line': b'writing top-level names to rpi_gpio_msgs.egg-info/top_level.txt\n'}
+[2.622312] (-) TimerEvent: {}
+[2.627006] (rpi_gpio_msgs) StdoutLine: {'line': b"reading manifest file 'rpi_gpio_msgs.egg-info/SOURCES.txt'\n"}
+[2.633701] (rpi_gpio_msgs) StdoutLine: {'line': b"writing manifest file 'rpi_gpio_msgs.egg-info/SOURCES.txt'\n"}
+[2.722779] (-) TimerEvent: {}
+[2.806565] (rpi_gpio_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rpi_gpio_msgs_egg\n'}
+[2.823164] (-) TimerEvent: {}
+[2.876356] (rpi_gpio_msgs) CommandEnded: {'returncode': 0}
+[2.923421] (-) TimerEvent: {}
+[3.025848] (-) TimerEvent: {}
+[3.127246] (-) TimerEvent: {}
+[3.228019] (-) TimerEvent: {}
+[3.285843] (rpi_gpio_msgs) JobProgress: {'identifier': 'rpi_gpio_msgs', 'progress': 'install'}
+[3.324993] (rpi_gpio_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs'], 'cwd': '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.2 51880 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '99'), ('PATH', '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51880 192.168.1.81 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron')]), 'shell': False}
+[3.328522] (-) TimerEvent: {}
+[3.353838] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.358333] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/ament_index/resource_index/rosidl_interfaces/rpi_gpio_msgs\n'}
+[3.358867] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/srv/LEDToggle.json\n'}
+[3.359668] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.360687] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg\n'}
+[3.361451] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.362043] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.362507] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.363510] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__functions.c\n'}
+[3.364070] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__type_support.c\n'}
+[3.364497] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__description.c\n'}
+[3.365264] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__functions.h\n'}
+[3.365971] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__struct.h\n'}
+[3.366641] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__type_support.h\n'}
+[3.367439] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/led_toggle.h\n'}
+[3.368317] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/library_path.sh\n'}
+[3.369186] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/library_path.dsv\n'}
+[3.370693] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_generator_c.so\n'}
+[3.372414] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.373176] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg\n'}
+[3.375989] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.377080] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.377468] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.379617] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__rosidl_typesupport_fastrtps_c.h\n'}
+[3.380640] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.381080] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.381513] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.381864] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.382236] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__builder.hpp\n'}
+[3.382675] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__struct.hpp\n'}
+[3.383585] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__traits.hpp\n'}
+[3.384107] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/led_toggle.hpp\n'}
+[3.384582] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.385034] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg\n'}
+[3.385763] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.386238] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.386846] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.387950] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.388908] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/dds_fastrtps\n'}
+[3.389413] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.389844] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.390705] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg\n'}
+[3.391236] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.391800] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.392332] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.393212] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__rosidl_typesupport_introspection_c.h\n'}
+[3.393690] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__type_support.c\n'}
+[3.394552] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.416011] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_c.so\n'}
+[3.416667] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs\n'}
+[3.417313] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv\n'}
+[3.417935] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail\n'}
+[3.418512] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.419098] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/include/rpi_gpio_msgs/rpi_gpio_msgs/srv/detail/led_toggle__type_support.cpp\n'}
+[3.420090] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.420943] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_typesupport_cpp.so\n'}
+[3.421559] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/pythonpath.sh\n'}
+[3.422095] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/pythonpath.dsv\n'}
+[3.422602] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs-0.0.0-py3.10.egg-info\n'}
+[3.423217] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.423936] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.424536] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.425098] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.425753] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs\n'}
+[3.426795] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/_rpi_gpio_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.427492] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/_rpi_gpio_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.428158] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.428708] (-) TimerEvent: {}
+[3.429945] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/librpi_gpio_msgs__rosidl_generator_py.so\n'}
+[3.430592] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/srv\n'}
+[3.431099] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/srv/_led_toggle.py\n'}
+[3.431775] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/srv/_led_toggle_s.c\n'}
+[3.432311] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/srv/__init__.py\n'}
+[3.433364] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.433908] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/__init__.py\n'}
+[3.434324] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.434733] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/_rpi_gpio_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.528988] (-) TimerEvent: {}
+[3.611480] (rpi_gpio_msgs) StdoutLine: {'line': b"Listing '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs'...\n"}
+[3.613309] (rpi_gpio_msgs) StdoutLine: {'line': b"Listing '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/srv'...\n"}
+[3.629419] (-) TimerEvent: {}
+[3.649793] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.653121] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.659997] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages/rpi_gpio_msgs/rpi_gpio_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.665342] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/librpi_gpio_msgs__rosidl_generator_py.so\n'}
+[3.669015] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/srv/LEDToggle.idl\n'}
+[3.671174] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/srv/LEDToggle.srv\n'}
+[3.673238] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/srv/LEDToggle_Request.msg\n'}
+[3.675390] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/srv/LEDToggle_Response.msg\n'}
+[3.677518] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/ament_index/resource_index/package_run_dependencies/rpi_gpio_msgs\n'}
+[3.679779] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/ament_index/resource_index/parent_prefix_path/rpi_gpio_msgs\n'}
+[3.682010] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/ament_prefix_path.sh\n'}
+[3.684173] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/ament_prefix_path.dsv\n'}
+[3.685622] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/path.sh\n'}
+[3.686688] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/environment/path.dsv\n'}
+[3.687886] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/local_setup.bash\n'}
+[3.688624] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/local_setup.sh\n'}
+[3.689260] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/local_setup.zsh\n'}
+[3.690365] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/local_setup.dsv\n'}
+[3.691537] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.dsv\n'}
+[3.692126] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/ament_index/resource_index/packages/rpi_gpio_msgs\n'}
+[3.700472] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_generator_cExport.cmake\n'}
+[3.702586] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.703747] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.704911] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.705917] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.706909] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.708442] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.709761] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.711168] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.712016] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.713304] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.715314] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.716031] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.716821] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.717428] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.729624] (-) TimerEvent: {}
+[3.731738] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.733032] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/export_rpi_gpio_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.734489] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.735728] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.737260] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.738463] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.739074] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.739754] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.740258] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.740813] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgsConfig.cmake\n'}
+[3.741351] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake/rpi_gpio_msgsConfig-version.cmake\n'}
+[3.741900] (rpi_gpio_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.xml\n'}
+[3.771426] (rpi_gpio_msgs) CommandEnded: {'returncode': 0}
+[3.830091] (-) TimerEvent: {}
+[3.932835] (-) TimerEvent: {}
+[4.035858] (-) TimerEvent: {}
+[4.136851] (-) TimerEvent: {}
+[4.238298] (-) TimerEvent: {}
+[4.339726] (-) TimerEvent: {}
+[4.444130] (-) TimerEvent: {}
+[4.548176] (-) TimerEvent: {}
+[4.651319] (-) TimerEvent: {}
+[4.753165] (-) TimerEvent: {}
+[4.855350] (-) TimerEvent: {}
+[4.957812] (-) TimerEvent: {}
+[5.059751] (-) TimerEvent: {}
+[5.161534] (-) TimerEvent: {}
+[5.263583] (-) TimerEvent: {}
+[5.366173] (-) TimerEvent: {}
+[5.469278] (-) TimerEvent: {}
+[5.570650] (-) TimerEvent: {}
+[5.672341] (-) TimerEvent: {}
+[5.753918] (rpi_gpio_msgs) JobEnded: {'identifier': 'rpi_gpio_msgs', 'rc': 0}
+[5.758471] (rpi_LCD_control) JobStarted: {'identifier': 'rpi_LCD_control'}
+[5.772560] (-) TimerEvent: {}
+[5.873481] (-) TimerEvent: {}
+[5.974370] (-) TimerEvent: {}
+[6.075925] (-) TimerEvent: {}
+[6.177535] (-) TimerEvent: {}
+[6.278713] (-) TimerEvent: {}
+[6.363229] (rpi_gpio) JobStarted: {'identifier': 'rpi_gpio'}
+[6.379081] (-) TimerEvent: {}
+[6.480736] (-) TimerEvent: {}
+[6.583569] (-) TimerEvent: {}
+[6.685472] (-) TimerEvent: {}
+[6.787245] (-) TimerEvent: {}
+[6.889721] (-) TimerEvent: {}
+[6.991620] (-) TimerEvent: {}
+[7.092959] (-) TimerEvent: {}
+[7.193968] (-) TimerEvent: {}
+[7.294938] (-) TimerEvent: {}
+[7.396019] (-) TimerEvent: {}
+[7.497656] (-) TimerEvent: {}
+[7.598654] (-) TimerEvent: {}
+[7.699554] (-) TimerEvent: {}
+[7.801328] (-) TimerEvent: {}
+[7.902956] (-) TimerEvent: {}
+[8.004827] (-) TimerEvent: {}
+[8.107810] (-) TimerEvent: {}
+[8.208679] (-) TimerEvent: {}
+[8.309907] (-) TimerEvent: {}
+[8.410865] (-) TimerEvent: {}
+[8.511828] (-) TimerEvent: {}
+[8.612817] (-) TimerEvent: {}
+[8.714238] (-) TimerEvent: {}
+[8.816127] (-) TimerEvent: {}
+[8.917775] (-) TimerEvent: {}
+[9.020120] (-) TimerEvent: {}
+[9.121412] (-) TimerEvent: {}
+[9.166190] (rpi_gpio) JobProgress: {'identifier': 'rpi_gpio', 'progress': 'cmake'}
+[9.170809] (rpi_gpio) JobProgress: {'identifier': 'rpi_gpio', 'progress': 'build'}
+[9.172709] (rpi_gpio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio', '--', '-j4', '-l4'], 'cwd': '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.2 51880 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '99'), ('PATH', '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51880 192.168.1.81 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron')]), 'shell': False}
+[9.221705] (-) TimerEvent: {}
+[9.323966] (-) TimerEvent: {}
+[9.377697] (rpi_gpio) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gpio_server\x1b[0m\n'}
+[9.424215] (-) TimerEvent: {}
+[9.492340] (rpi_gpio) StdoutLine: {'line': b'[ 50%] Built target gpio_client\n'}
+[9.503175] (rpi_gpio) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o\x1b[0m\n'}
+[9.524414] (-) TimerEvent: {}
+[9.625399] (-) TimerEvent: {}
+[9.726431] (-) TimerEvent: {}
+[9.827276] (-) TimerEvent: {}
+[9.928172] (-) TimerEvent: {}
+[10.029044] (-) TimerEvent: {}
+[10.130036] (-) TimerEvent: {}
+[10.230973] (-) TimerEvent: {}
+[10.333121] (-) TimerEvent: {}
+[10.434793] (-) TimerEvent: {}
+[10.536601] (-) TimerEvent: {}
+[10.638506] (-) TimerEvent: {}
+[10.741443] (-) TimerEvent: {}
+[10.843340] (-) TimerEvent: {}
+[10.945130] (-) TimerEvent: {}
+[11.047002] (-) TimerEvent: {}
+[11.148799] (-) TimerEvent: {}
+[11.250418] (-) TimerEvent: {}
+[11.352221] (-) TimerEvent: {}
+[11.454055] (-) TimerEvent: {}
+[11.544189] (rpi_LCD_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/rpi_LCD_control', 'build', '--build-base', '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build', 'install', '--record', '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/Sandbox/RPI_led_service/src/rpi_LCD_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.1.2 51880 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/pi/Sandbox/RPI_led_service/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '99', 'PATH': '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/opt/ros/iron', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.2 51880 192.168.1.81 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/prefix_override:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio'}, 'shell': False}
+[11.565961] (-) TimerEvent: {}
+[11.666987] (-) TimerEvent: {}
+[11.768132] (-) TimerEvent: {}
+[11.869197] (-) TimerEvent: {}
+[11.970181] (-) TimerEvent: {}
+[12.071288] (-) TimerEvent: {}
+[12.174448] (-) TimerEvent: {}
+[12.276517] (-) TimerEvent: {}
+[12.378578] (-) TimerEvent: {}
+[12.480593] (-) TimerEvent: {}
+[12.582577] (-) TimerEvent: {}
+[12.685024] (-) TimerEvent: {}
+[12.787661] (-) TimerEvent: {}
+[12.890296] (-) TimerEvent: {}
+[12.991726] (-) TimerEvent: {}
+[13.093125] (-) TimerEvent: {}
+[13.194779] (-) TimerEvent: {}
+[13.295979] (-) TimerEvent: {}
+[13.398328] (-) TimerEvent: {}
+[13.500704] (-) TimerEvent: {}
+[13.547363] (rpi_LCD_control) StdoutLine: {'line': b'running egg_info\n'}
+[13.552165] (rpi_LCD_control) StdoutLine: {'line': b'writing ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/PKG-INFO\n'}
+[13.554744] (rpi_LCD_control) StdoutLine: {'line': b'writing dependency_links to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/dependency_links.txt\n'}
+[13.559037] (rpi_LCD_control) StdoutLine: {'line': b'writing entry points to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/entry_points.txt\n'}
+[13.561304] (rpi_LCD_control) StdoutLine: {'line': b'writing requirements to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/requires.txt\n'}
+[13.563876] (rpi_LCD_control) StdoutLine: {'line': b'writing top-level names to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/top_level.txt\n'}
+[13.577430] (rpi_LCD_control) StdoutLine: {'line': b"reading manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'\n"}
+[13.582534] (rpi_LCD_control) StdoutLine: {'line': b"writing manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'\n"}
+[13.583663] (rpi_LCD_control) StdoutLine: {'line': b'running build\n'}
+[13.584270] (rpi_LCD_control) StdoutLine: {'line': b'running build_py\n'}
+[13.586862] (rpi_LCD_control) StdoutLine: {'line': b'running install\n'}
+[13.588018] (rpi_LCD_control) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[13.588943] (rpi_LCD_control) StderrLine: {'line': b'  warnings.warn(\n'}
+[13.590002] (rpi_LCD_control) StdoutLine: {'line': b'running install_lib\n'}
+[13.597932] (rpi_LCD_control) StdoutLine: {'line': b'running install_data\n'}
+[13.601063] (rpi_LCD_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.601961] (-) TimerEvent: {}
+[13.611037] (rpi_LCD_control) StdoutLine: {'line': b"removing '/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[13.613619] (rpi_LCD_control) StdoutLine: {'line': b'Copying ../../build/rpi_LCD_control/rpi_LCD_control.egg-info to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control-0.0.0-py3.10.egg-info\n'}
+[13.623870] (rpi_LCD_control) StdoutLine: {'line': b'running install_scripts\n'}
+[13.702204] (-) TimerEvent: {}
+[13.736558] (rpi_LCD_control) StdoutLine: {'line': b'Installing displayclient script to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/rpi_LCD_control\n'}
+[13.743453] (rpi_LCD_control) StdoutLine: {'line': b"writing list of installed files to '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log'\n"}
+[13.802486] (-) TimerEvent: {}
+[13.903523] (-) TimerEvent: {}
+[13.913621] (rpi_LCD_control) CommandEnded: {'returncode': 0}
+[14.004358] (-) TimerEvent: {}
+[14.107395] (-) TimerEvent: {}
+[14.211098] (-) TimerEvent: {}
+[14.315489] (-) TimerEvent: {}
+[14.417192] (-) TimerEvent: {}
+[14.502290] (rpi_LCD_control) JobEnded: {'identifier': 'rpi_LCD_control', 'rc': 0}
+[14.517475] (-) TimerEvent: {}
+[14.620762] (-) TimerEvent: {}
+[14.722479] (-) TimerEvent: {}
+[14.824506] (-) TimerEvent: {}
+[14.926583] (-) TimerEvent: {}
+[15.028786] (-) TimerEvent: {}
+[15.130914] (-) TimerEvent: {}
+[15.233083] (-) TimerEvent: {}
+[15.335216] (-) TimerEvent: {}
+[15.437529] (-) TimerEvent: {}
+[15.539799] (-) TimerEvent: {}
+[15.642259] (-) TimerEvent: {}
+[15.744418] (-) TimerEvent: {}
+[15.846616] (-) TimerEvent: {}
+[15.949011] (-) TimerEvent: {}
+[16.051226] (-) TimerEvent: {}
+[16.153326] (-) TimerEvent: {}
+[16.255411] (-) TimerEvent: {}
+[16.357477] (-) TimerEvent: {}
+[16.459579] (-) TimerEvent: {}
+[16.561197] (-) TimerEvent: {}
+[16.671339] (-) TimerEvent: {}
+[16.772260] (-) TimerEvent: {}
+[16.873578] (-) TimerEvent: {}
+[16.975284] (-) TimerEvent: {}
+[17.077007] (-) TimerEvent: {}
+[17.178735] (-) TimerEvent: {}
+[17.280886] (-) TimerEvent: {}
+[17.382935] (-) TimerEvent: {}
+[17.486161] (-) TimerEvent: {}
+[17.588867] (-) TimerEvent: {}
+[17.690997] (-) TimerEvent: {}
+[17.793664] (-) TimerEvent: {}
+[17.895928] (-) TimerEvent: {}
+[17.998215] (-) TimerEvent: {}
+[18.100865] (-) TimerEvent: {}
+[18.203417] (-) TimerEvent: {}
+[18.305918] (-) TimerEvent: {}
+[18.408812] (-) TimerEvent: {}
+[18.511029] (-) TimerEvent: {}
+[18.612457] (-) TimerEvent: {}
+[18.714167] (-) TimerEvent: {}
+[18.815621] (-) TimerEvent: {}
+[18.917265] (-) TimerEvent: {}
+[19.018404] (-) TimerEvent: {}
+[19.120572] (-) TimerEvent: {}
+[19.223087] (-) TimerEvent: {}
+[19.323964] (-) TimerEvent: {}
+[19.424776] (-) TimerEvent: {}
+[19.525585] (-) TimerEvent: {}
+[19.626542] (-) TimerEvent: {}
+[19.727460] (-) TimerEvent: {}
+[19.828331] (-) TimerEvent: {}
+[19.929217] (-) TimerEvent: {}
+[20.030102] (-) TimerEvent: {}
+[20.131235] (-) TimerEvent: {}
+[20.232108] (-) TimerEvent: {}
+[20.332981] (-) TimerEvent: {}
+[20.433848] (-) TimerEvent: {}
+[20.534737] (-) TimerEvent: {}
+[20.635748] (-) TimerEvent: {}
+[20.736543] (-) TimerEvent: {}
+[20.837405] (-) TimerEvent: {}
+[20.938319] (-) TimerEvent: {}
+[21.039194] (-) TimerEvent: {}
+[21.140042] (-) TimerEvent: {}
+[21.240868] (-) TimerEvent: {}
+[21.341759] (-) TimerEvent: {}
+[21.442616] (-) TimerEvent: {}
+[21.543508] (-) TimerEvent: {}
+[21.644346] (-) TimerEvent: {}
+[21.745263] (-) TimerEvent: {}
+[21.846137] (-) TimerEvent: {}
+[21.947002] (-) TimerEvent: {}
+[22.047826] (-) TimerEvent: {}
+[22.148906] (-) TimerEvent: {}
+[22.249902] (-) TimerEvent: {}
+[22.351465] (-) TimerEvent: {}
+[22.452313] (-) TimerEvent: {}
+[22.553200] (-) TimerEvent: {}
+[22.654078] (-) TimerEvent: {}
+[22.754939] (-) TimerEvent: {}
+[22.855759] (-) TimerEvent: {}
+[22.956602] (-) TimerEvent: {}
+[23.057382] (-) TimerEvent: {}
+[23.158183] (-) TimerEvent: {}
+[23.258982] (-) TimerEvent: {}
+[23.359824] (-) TimerEvent: {}
+[23.374738] (rpi_gpio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KGPIOServer::GPIOServer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.375782] (rpi_gpio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:24:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kgpiod::line_request::flags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.376702] (rpi_gpio) StderrLine: {'line': b'   24 |         \x1b[01;35m\x1b[Kline1.request({"LED_17_toggle", gpiod::line_request::DIRECTION_OUTPUT})\x1b[m\x1b[K;\n'}
+[23.377221] (rpi_gpio) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.377622] (rpi_gpio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:25:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kgpiod::line_request::flags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.378047] (rpi_gpio) StderrLine: {'line': b'   25 |         \x1b[01;35m\x1b[Kline2.request({"LED_27_toggle", gpiod::line_request::DIRECTION_OUTPUT})\x1b[m\x1b[K;\n'}
+[23.378486] (rpi_gpio) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.378880] (rpi_gpio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:26:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kgpiod::line_request::flags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.379364] (rpi_gpio) StderrLine: {'line': b'   26 |         \x1b[01;35m\x1b[Kline3.request({"LED_23_status", gpiod::line_request::DIRECTION_INPUT})\x1b[m\x1b[K;\n'}
+[23.379767] (rpi_gpio) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.460103] (-) TimerEvent: {}
+[23.561372] (-) TimerEvent: {}
+[23.662408] (-) TimerEvent: {}
+[23.763531] (-) TimerEvent: {}
+[23.864372] (-) TimerEvent: {}
+[23.965168] (-) TimerEvent: {}
+[24.066026] (-) TimerEvent: {}
+[24.166842] (-) TimerEvent: {}
+[24.267677] (-) TimerEvent: {}
+[24.368499] (-) TimerEvent: {}
+[24.469342] (-) TimerEvent: {}
+[24.570204] (-) TimerEvent: {}
+[24.671783] (-) TimerEvent: {}
+[24.773348] (-) TimerEvent: {}
+[24.874911] (-) TimerEvent: {}
+[24.975959] (-) TimerEvent: {}
+[25.077605] (-) TimerEvent: {}
+[25.179315] (-) TimerEvent: {}
+[25.281189] (-) TimerEvent: {}
+[25.382768] (-) TimerEvent: {}
+[25.483636] (-) TimerEvent: {}
+[25.584513] (-) TimerEvent: {}
+[25.685453] (-) TimerEvent: {}
+[25.786389] (-) TimerEvent: {}
+[25.887358] (-) TimerEvent: {}
+[25.988296] (-) TimerEvent: {}
+[26.089273] (-) TimerEvent: {}
+[26.190357] (-) TimerEvent: {}
+[26.291369] (-) TimerEvent: {}
+[26.392742] (-) TimerEvent: {}
+[26.494134] (-) TimerEvent: {}
+[26.595789] (-) TimerEvent: {}
+[26.697302] (-) TimerEvent: {}
+[26.798262] (-) TimerEvent: {}
+[26.899232] (-) TimerEvent: {}
+[27.000304] (-) TimerEvent: {}
+[27.101709] (-) TimerEvent: {}
+[27.202754] (-) TimerEvent: {}
+[27.303739] (-) TimerEvent: {}
+[27.405102] (-) TimerEvent: {}
+[27.508409] (-) TimerEvent: {}
+[27.609470] (-) TimerEvent: {}
+[27.710360] (-) TimerEvent: {}
+[27.811602] (-) TimerEvent: {}
+[27.912459] (-) TimerEvent: {}
+[28.013276] (-) TimerEvent: {}
+[28.114079] (-) TimerEvent: {}
+[28.214896] (-) TimerEvent: {}
+[28.315716] (-) TimerEvent: {}
+[28.416576] (-) TimerEvent: {}
+[28.517445] (-) TimerEvent: {}
+[28.618284] (-) TimerEvent: {}
+[28.719151] (-) TimerEvent: {}
+[28.819926] (-) TimerEvent: {}
+[28.920753] (-) TimerEvent: {}
+[29.021544] (-) TimerEvent: {}
+[29.122510] (-) TimerEvent: {}
+[29.223756] (-) TimerEvent: {}
+[29.324553] (-) TimerEvent: {}
+[29.425446] (-) TimerEvent: {}
+[29.526354] (-) TimerEvent: {}
+[29.582770] (rpi_gpio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gpio_server\x1b[0m\n'}
+[29.626552] (-) TimerEvent: {}
+[29.727501] (-) TimerEvent: {}
+[29.828895] (-) TimerEvent: {}
+[29.931409] (-) TimerEvent: {}
+[30.035213] (-) TimerEvent: {}
+[30.137976] (-) TimerEvent: {}
+[30.239377] (-) TimerEvent: {}
+[30.340149] (-) TimerEvent: {}
+[30.441051] (-) TimerEvent: {}
+[30.484245] (rpi_gpio) StdoutLine: {'line': b'[100%] Built target gpio_server\n'}
+[30.523401] (rpi_gpio) CommandEnded: {'returncode': 0}
+[30.541270] (-) TimerEvent: {}
+[30.642148] (-) TimerEvent: {}
+[30.683929] (rpi_gpio) JobProgress: {'identifier': 'rpi_gpio', 'progress': 'install'}
+[30.685140] (rpi_gpio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio'], 'cwd': '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.2 51880 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '99'), ('PATH', '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51880 192.168.1.81 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron')]), 'shell': False}
+[30.722449] (rpi_gpio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.724206] (rpi_gpio) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server\n'}
+[30.735091] (rpi_gpio) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server" to ""\n'}
+[30.736332] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client\n'}
+[30.737763] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio\n'}
+[30.738312] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio\n'}
+[30.738792] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh\n'}
+[30.739375] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv\n'}
+[30.739875] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh\n'}
+[30.740310] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv\n'}
+[30.740826] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash\n'}
+[30.741327] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh\n'}
+[30.741822] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh\n'}
+[30.742177] (-) TimerEvent: {}
+[30.742542] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv\n'}
+[30.743264] (rpi_gpio) StdoutLine: {'line': b'-- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv\n'}
+[30.743797] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio\n'}
+[30.744783] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake\n'}
+[30.745370] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake\n'}
+[30.745899] (rpi_gpio) StdoutLine: {'line': b'-- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml\n'}
+[30.749505] (rpi_gpio) CommandEnded: {'returncode': 0}
+[30.842389] (-) TimerEvent: {}
+[30.943368] (-) TimerEvent: {}
+[31.044177] (-) TimerEvent: {}
+[31.145444] (-) TimerEvent: {}
+[31.246611] (-) TimerEvent: {}
+[31.347465] (-) TimerEvent: {}
+[31.394486] (rpi_gpio) JobEnded: {'identifier': 'rpi_gpio', 'rc': 0}
+[31.397729] (-) EventReactorShutdown: {}

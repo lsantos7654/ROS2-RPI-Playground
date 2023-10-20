@@ -21,15 +21,7 @@ int main(int argc, char **argv)
     }
 
     request->toggle = gpioStatus;
-
-    if (gpioChoice == 17)
-    {
-        request->gpiochoice = 17; 
-    }
-    else if (gpioChoice == 27)
-    {
-        request->gpiochoice = 27;
-    }
+    request->gpiochoice = gpioChoice;
 
     // Toggle GPIO
     if(gpio_client->wait_for_service(std::chrono::seconds(1)))

@@ -54,11 +54,16 @@ def main(args=None):
     
     lcd_display.update_display() 
 
-    rclpy.spin(lcd_display)
+    try:
+        rclpy.spin(lcd_display)
+    except KeyboardInterrupt:
+        print("Shut Down")
+    finally:
+        # Clean up and shut down
+        lcd_display.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
 
-    # Clean up and shut down
-    lcd_display.destroy_node()
-    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
