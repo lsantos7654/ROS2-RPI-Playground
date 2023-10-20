@@ -28,6 +28,9 @@ Summary:
     * 1st node/server will control a ssd1306 LCD screen and display the current state of the GPIO pins
     * 2nd node/server will control 3 GPIO pins (2x outputs [17, 27] for led lights, 1x input [23 connected to 17]
  * Create a custom service to communicate between the client and server
+   * int32 gpiochoice (command)
+   * int32 toggle (command)
+   * bool success (response)
  * Create 1 client node on Host PC
     * This node will send a signal to both servers to set a chosen gpio pin on/off or to get the current state
 
