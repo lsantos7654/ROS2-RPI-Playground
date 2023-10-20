@@ -22,6 +22,7 @@ On Pi Run:
 ............................................................................................................................................................................
 
 Second Project: RPI_led_service
+![IMG_7297](https://github.com/lsantos7654/Sandbox/assets/147119808/5602f8f3-7883-461c-9b1d-e41d90708c53)
 Summary:
 * Create 2 server nodes on a Raspberry Pi 4:
     * 1st node/server will control a ssd1306 LCD screen and display the current state of the GPIO pins
