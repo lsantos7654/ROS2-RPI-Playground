@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember rpi_gpio_msgs__srv__LED
   },
   {
     "toggle",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

@@ -30,9 +30,16 @@ class LCDDisplay(Node):
 
     def update_lcd_display_callback(self, request, response):
         if request.gpiochoice == 27:
-            self.__gpio27 = request.toggle
+            if (request.toggle == 1):
+                self.__gpio27 = True
+            elif (request.toggle == 0):
+                self.__gpio27 = False
         if request.gpiochoice == 17:
-            self.__gpio17 = request.toggle
+            if (request.toggle == 1):
+                self.__gpio17 = True
+            elif (request.toggle == 0):
+                self.__gpio17 = False
+        
         self.__gpio23 = self.__gpio17
 
         self.update_display()

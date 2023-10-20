@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     auto request = std::make_shared<rpi_gpio_msgs::srv::LEDToggle::Request>();
 
     int gpioChoice = 0;
-    bool gpioStatus = 0;
+    int gpioStatus = 0;
 
     if (argc > 1){
         gpioChoice = std::stoi(argv[1]);

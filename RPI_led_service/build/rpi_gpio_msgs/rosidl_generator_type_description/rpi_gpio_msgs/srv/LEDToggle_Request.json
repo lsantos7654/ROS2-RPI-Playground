@@ -16,7 +16,7 @@
         {
           "name": "toggle",
           "type": {
-            "type_id": 15,
+            "type_id": 6,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -30,7 +30,7 @@
   "type_hashes": [
     {
       "type_name": "rpi_gpio_msgs/srv/LEDToggle_Request",
-      "hash_string": "RIHS01_9646918419133dbf054018bcc02f879b1b504b9e5804df864385fa5a5ac3151a"
+      "hash_string": "RIHS01_5c794d0c19749c162362920816488964ad0d5f352fe32720adc0b81290272622"
     }
   ]
 }

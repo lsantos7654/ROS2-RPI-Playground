@@ -64,8 +64,8 @@ bool rpi_gpio_msgs__srv__led_toggle__request__convert_from_py(PyObject * _pymsg,
     if (!field) {
       return false;
     }
-    assert(PyBool_Check(field));
-    ros_message->toggle = (Py_True == field);
+    assert(PyLong_Check(field));
+    ros_message->toggle = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -103,7 +103,7 @@ PyObject * rpi_gpio_msgs__srv__led_toggle__request__convert_to_py(void * raw_ros
   }
   {  // toggle
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->toggle ? 1 : 0);
+    field = PyLong_FromLong(ros_message->toggle);
     {
       int rc = PyObject_SetAttrString(_pymessage, "toggle", field);
       Py_DECREF(field);

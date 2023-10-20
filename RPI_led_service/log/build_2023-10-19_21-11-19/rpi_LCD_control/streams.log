@@ -1,0 +1,26 @@
+[5.061s] Invoking command in '/home/pi/Sandbox/RPI_led_service/src/rpi_LCD_control': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio PYTHONPATH=/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/prefix_override:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/rpi_LCD_control build --build-base /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build install --record /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log --single-version-externally-managed
+[7.313s] running egg_info
+[7.319s] writing ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/PKG-INFO
+[7.323s] writing dependency_links to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/dependency_links.txt
+[7.327s] writing entry points to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/entry_points.txt
+[7.331s] writing requirements to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/requires.txt
+[7.335s] writing top-level names to ../../build/rpi_LCD_control/rpi_LCD_control.egg-info/top_level.txt
+[7.353s] reading manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'
+[7.360s] writing manifest file '../../build/rpi_LCD_control/rpi_LCD_control.egg-info/SOURCES.txt'
+[7.363s] running build
+[7.364s] running build_py
+[7.367s] copying rpi_LCD_control/scripts/displayclient.py -> /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts
+[7.374s] running install
+[7.376s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.377s]   warnings.warn(
+[7.380s] running install_lib
+[7.387s] copying /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build/lib/rpi_LCD_control/scripts/displayclient.py -> /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts
+[7.396s] byte-compiling /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control/scripts/displayclient.py to displayclient.cpython-310.pyc
+[7.405s] running install_data
+[7.410s] running install_egg_info
+[7.422s] removing '/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control-0.0.0-py3.10.egg-info' (and everything under it)
+[7.432s] Copying ../../build/rpi_LCD_control/rpi_LCD_control.egg-info to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages/rpi_LCD_control-0.0.0-py3.10.egg-info
+[7.459s] running install_scripts
+[7.590s] Installing displayclient script to /home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/rpi_LCD_control
+[7.596s] writing list of installed files to '/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log'
+[7.796s] Invoked command in '/home/pi/Sandbox/RPI_led_service/src/rpi_LCD_control' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio PYTHONPATH=/home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/prefix_override:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/rpi_LCD_control build --build-base /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/build install --record /home/pi/Sandbox/RPI_led_service/build/rpi_LCD_control/install.log --single-version-externally-managed

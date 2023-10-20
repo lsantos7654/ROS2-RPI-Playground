@@ -112,7 +112,7 @@
           {
             "name": "toggle",
             "type": {
-              "type_id": 15,
+              "type_id": 6,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -186,7 +186,7 @@
   "type_hashes": [
     {
       "type_name": "rpi_gpio_msgs/srv/LEDToggle",
-      "hash_string": "RIHS01_eb284c3fc89ec4f5f172b2d5f2169d2b270d9871367e7064cb2439d05a285f03"
+      "hash_string": "RIHS01_8f97dd040443ca43a22815165c82f8741f0268bcb4dac3a8d9868a0999cffc47"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -194,11 +194,11 @@
     },
     {
       "type_name": "rpi_gpio_msgs/srv/LEDToggle_Event",
-      "hash_string": "RIHS01_6e445e79b32d331d2bc3390d4844fdf1b746cd1f6fae09b5f9cddcc7b612b7c6"
+      "hash_string": "RIHS01_a9468a8169b62da7b0be2ed2cefd1b85c0ca6807527155e166389cc0eba8c5c3"
     },
     {
       "type_name": "rpi_gpio_msgs/srv/LEDToggle_Request",
-      "hash_string": "RIHS01_9646918419133dbf054018bcc02f879b1b504b9e5804df864385fa5a5ac3151a"
+      "hash_string": "RIHS01_5c794d0c19749c162362920816488964ad0d5f352fe32720adc0b81290272622"
     },
     {
       "type_name": "rpi_gpio_msgs/srv/LEDToggle_Response",

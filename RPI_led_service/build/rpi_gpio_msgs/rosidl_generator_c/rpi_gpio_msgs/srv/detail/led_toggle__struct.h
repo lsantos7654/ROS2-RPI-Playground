@@ -21,7 +21,7 @@ extern "C"
 typedef struct rpi_gpio_msgs__srv__LEDToggle_Request
 {
   int32_t gpiochoice;
-  bool toggle;
+  int32_t toggle;
 } rpi_gpio_msgs__srv__LEDToggle_Request;
 
 // Struct for a sequence of rpi_gpio_msgs__srv__LEDToggle_Request.

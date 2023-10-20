@@ -69,14 +69,14 @@ class LEDToggle_Request(metaclass=Metaclass_LEDToggle_Request):
 
     _fields_and_field_types = {
         'gpiochoice': 'int32',
-        'toggle': 'boolean',
+        'toggle': 'int32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -89,7 +89,7 @@ class LEDToggle_Request(metaclass=Metaclass_LEDToggle_Request):
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.gpiochoice = kwargs.get('gpiochoice', int())
-        self.toggle = kwargs.get('toggle', bool())
+        self.toggle = kwargs.get('toggle', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -156,8 +156,10 @@ class LEDToggle_Request(metaclass=Metaclass_LEDToggle_Request):
     def toggle(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, bool), \
-                "The 'toggle' field must be of type 'bool'"
+                isinstance(value, int), \
+                "The 'toggle' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'toggle' field must be an integer in [-2147483648, 2147483647]"
         self._toggle = value
 
 

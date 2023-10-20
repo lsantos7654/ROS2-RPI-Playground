@@ -39,7 +39,7 @@ struct LEDToggle_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->gpiochoice = 0l;
-      this->toggle = false;
+      this->toggle = 0l;
     }
   }
 
@@ -50,7 +50,7 @@ struct LEDToggle_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->gpiochoice = 0l;
-      this->toggle = false;
+      this->toggle = 0l;
     }
   }
 
@@ -59,7 +59,7 @@ struct LEDToggle_Request_
     int32_t;
   _gpiochoice_type gpiochoice;
   using _toggle_type =
-    bool;
+    int32_t;
   _toggle_type toggle;
 
   // setters for named parameter idiom
@@ -70,7 +70,7 @@ struct LEDToggle_Request_
     return *this;
   }
   Type & set__toggle(
-    const bool & _arg)
+    const int32_t & _arg)
   {
     this->toggle = _arg;
     return *this;

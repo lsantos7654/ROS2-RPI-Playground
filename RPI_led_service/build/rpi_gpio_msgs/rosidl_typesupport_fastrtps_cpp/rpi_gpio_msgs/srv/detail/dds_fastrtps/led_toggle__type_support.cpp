@@ -36,7 +36,7 @@ cdr_serialize(
   // Member: gpiochoice
   cdr << ros_message.gpiochoice;
   // Member: toggle
-  cdr << (ros_message.toggle ? true : false);
+  cdr << ros_message.toggle;
   return true;
 }
 
@@ -50,11 +50,7 @@ cdr_deserialize(
   cdr >> ros_message.gpiochoice;
 
   // Member: toggle
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.toggle = tmp ? true : false;
-  }
+  cdr >> ros_message.toggle;
 
   return true;
 }
@@ -118,7 +114,8 @@ max_serialized_size_LEDToggle_Request(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

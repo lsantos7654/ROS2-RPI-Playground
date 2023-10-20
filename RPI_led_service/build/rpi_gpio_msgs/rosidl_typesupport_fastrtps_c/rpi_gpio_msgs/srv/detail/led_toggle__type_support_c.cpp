@@ -56,7 +56,7 @@ static bool _LEDToggle_Request__cdr_serialize(
 
   // Field name: toggle
   {
-    cdr << (ros_message->toggle ? true : false);
+    cdr << ros_message->toggle;
   }
 
   return true;
@@ -78,9 +78,7 @@ static bool _LEDToggle_Request__cdr_deserialize(
 
   // Field name: toggle
   {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->toggle = tmp ? true : false;
+    cdr >> ros_message->toggle;
   }
 
   return true;
@@ -150,7 +148,8 @@ size_t max_serialized_size_rpi_gpio_msgs__srv__LEDToggle_Request(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

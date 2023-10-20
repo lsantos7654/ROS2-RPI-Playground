@@ -36,9 +36,9 @@ class LCDDisplay(Node):
                 self.__gpio27 = False
         if request.gpiochoice == 17:
             if (request.toggle == 1):
-                self.__gpio27 = True
+                self.__gpio17 = True
             elif (request.toggle == 0):
-                self.__gpio27 = False
+                self.__gpio17 = False
         
         self.__gpio23 = self.__gpio17
 

@@ -1,0 +1,40 @@
+[2.215s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[2.499s] [ 25%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
+[2.502s] [ 50%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
+[17.607s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In constructor ‘[01m[KGPIOServer::GPIOServer()[m[K’:
+[17.610s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:25:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.611s]    25 |         [01;35m[Kline1.request({"LED_17_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+[17.612s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.613s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:26:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.613s]    26 |         [01;35m[Kline2.request({"LED_27_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+[17.614s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.615s] [01m[K/home/pi/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:27:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.616s]    27 |         [01;35m[Kline3.request({"LED_23_status", gpiod::line_request::DIRECTION_INPUT})[m[K;
+[17.624s]       |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.310s] [ 75%] [32m[1mLinking CXX executable gpio_server[0m
+[25.417s] [100%] [32m[1mLinking CXX executable gpio_client[0m
+[26.878s] [100%] Built target gpio_client
+[26.903s] [100%] Built target gpio_server
+[26.952s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --build /home/pi/Sandbox/RPI_led_service/build/rpi_gpio -- -j4 -l4
+[27.122s] Invoking command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio
+[27.164s] -- Install configuration: ""
+[27.173s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server
+[27.178s] -- Set runtime path of "/home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_server" to ""
+[27.179s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client
+[27.193s] -- Set runtime path of "/home/pi/Sandbox/RPI_led_service/install/rpi_gpio/lib/rpi_gpio/gpio_client" to ""
+[27.194s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+[27.195s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+[27.196s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+[27.197s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+[27.198s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+[27.199s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+[27.205s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+[27.213s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+[27.217s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+[27.219s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+[27.221s] -- Installing: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.dsv
+[27.223s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+[27.228s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+[27.229s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+[27.230s] -- Up-to-date: /home/pi/Sandbox/RPI_led_service/install/rpi_gpio/share/rpi_gpio/package.xml
+[27.231s] Invoked command in '/home/pi/Sandbox/RPI_led_service/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs:/home/pi/Sandbox/RPI_led_service/install/rpi_gpio:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control:/opt/ros/iron PYTHONPATH=/home/pi/Sandbox/RPI_led_service/install/rpi_gpio_msgs/lib/python3.10/site-packages:/home/pi/Sandbox/RPI_led_service/install/rpi_LCD_control/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages /usr/bin/cmake --install /home/pi/Sandbox/RPI_led_service/build/rpi_gpio

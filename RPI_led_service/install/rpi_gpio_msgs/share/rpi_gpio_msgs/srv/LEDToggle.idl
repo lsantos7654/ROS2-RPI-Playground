@@ -8,7 +8,7 @@ module rpi_gpio_msgs {
     struct LEDToggle_Request {
       int32 gpiochoice;
 
-      boolean toggle;
+      int32 toggle;
     };
     struct LEDToggle_Response {
       boolean success;

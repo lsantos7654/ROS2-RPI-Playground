@@ -1,2 +1,2 @@
 int32 gpiochoice
-bool toggle
+int32 toggle
