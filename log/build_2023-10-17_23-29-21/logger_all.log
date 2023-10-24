@@ -1,0 +1,412 @@
+[0.384s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.384s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd4b10b18a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd4b10b3a60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd4b10b3a60>>)
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.402s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.403s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lsantos/GitHub/Sandbox'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'ros'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['cmake', 'python']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'cmake'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'python'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extensions ['python_setup_py']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(HelloWorld) by extension 'python_setup_py'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'ros'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['cmake', 'python']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'cmake'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'python'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extensions ['python_setup_py']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led) by extension 'python_setup_py'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'ros'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['cmake', 'python']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'cmake'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'python'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extensions ['python_setup_py']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src) by extension 'python_setup_py'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extensions ['ignore', 'ignore_ament_install']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led/src/gpio_control) by extension 'ros'
+[0.411s] DEBUG:colcon.colcon_core.package_identification:Package 'RPI_led/src/gpio_control' with type 'ros.ament_cmake' and name 'gpio_control'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'ignore_ament_install'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['colcon_pkg']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'colcon_meta'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['ros']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'ros'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['cmake', 'python']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'cmake'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'python'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extensions ['python_setup_py']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service) by extension 'python_setup_py'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/build) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/build) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/build) ignored
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/install) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/install) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/install) ignored
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/log) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/log) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/log) ignored
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['ignore', 'ignore_ament_install']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'ignore'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'ignore_ament_install'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['colcon_pkg']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'colcon_meta'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['ros']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'ros'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['cmake', 'python']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'cmake'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'python'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extensions ['python_setup_py']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src) by extension 'python_setup_py'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extensions ['ignore', 'ignore_ament_install']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extension 'ignore'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extension 'ignore_ament_install'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extensions ['colcon_pkg']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extension 'colcon_pkg'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extensions ['colcon_meta']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extension 'colcon_meta'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extensions ['ros']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio) by extension 'ros'
+[0.412s] DEBUG:colcon.colcon_core.package_identification:Package 'RPI_led_service/src/rpi_gpio' with type 'ros.ament_cmake' and name 'rpi_gpio'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extension 'ignore'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extension 'ignore_ament_install'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extensions ['colcon_pkg']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extension 'colcon_pkg'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extensions ['colcon_meta']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extension 'colcon_meta'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extensions ['ros']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(RPI_led_service/src/rpi_gpio_msgs) by extension 'ros'
+[0.413s] DEBUG:colcon.colcon_core.package_identification:Package 'RPI_led_service/src/rpi_gpio_msgs' with type 'ros.ament_cmake' and name 'rpi_gpio_msgs'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'ignore_ament_install'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['colcon_pkg']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'colcon_pkg'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['colcon_meta']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'colcon_meta'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['ros']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'ros'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['cmake', 'python']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'cmake'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'python'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extensions ['python_setup_py']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/lib) by extension 'python_setup_py'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['ignore', 'ignore_ament_install']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'ignore'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'ignore_ament_install'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['colcon_pkg']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'colcon_pkg'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['colcon_meta']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'colcon_meta'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['ros']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'ros'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['cmake', 'python']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'cmake'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'python'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extensions ['python_setup_py']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/merge) by extension 'python_setup_py'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['ignore', 'ignore_ament_install']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'ignore'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'ignore_ament_install'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['colcon_pkg']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'colcon_pkg'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['colcon_meta']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'colcon_meta'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['ros']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'ros'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['cmake', 'python']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'cmake'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'python'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extensions ['python_setup_py']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(test/subprocess_test) by extension 'python_setup_py'
+[0.414s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.414s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.414s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.414s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.414s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.449s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.460s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/lsantos/GitHub/Sandbox/RPI_led_service/install
+[0.465s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/iron
+[0.466s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_target' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'gpio_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.505s] DEBUG:colcon.colcon_core.verb:Building package 'gpio_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lsantos/GitHub/Sandbox/build/gpio_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lsantos/GitHub/Sandbox/install/gpio_control', 'merge_install': False, 'path': '/home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control', 'symlink_install': False, 'test_result_base': None}
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_target' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_clean_first' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'cmake_force_configure' from command line to 'False'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'ament_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.510s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.510s] DEBUG:colcon.colcon_core.verb:Building package 'rpi_gpio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lsantos/GitHub/Sandbox/build/rpi_gpio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lsantos/GitHub/Sandbox/install/rpi_gpio', 'merge_install': False, 'path': '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio', 'symlink_install': False, 'test_result_base': None}
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'rpi_gpio_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.516s] DEBUG:colcon.colcon_core.verb:Building package 'rpi_gpio_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs', 'merge_install': False, 'path': '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.521s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.527s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.527s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control' with build type 'ament_cmake'
+[0.527s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control'
+[0.533s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.550s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio' with build type 'ament_cmake'
+[0.550s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio'
+[0.556s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.556s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.573s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs' with build type 'ament_cmake'
+[0.574s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs'
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/gpio_control
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/rpi_gpio
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs
+[1.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led/src/gpio_control -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/gpio_control
+[1.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/gpio_control -- -j24 -l24
+[1.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/rpi_gpio
+[1.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/rpi_gpio -- -j24 -l24
+[1.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio_msgs -DCMAKE_INSTALL_PREFIX=/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs
+[1.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs -- -j24 -l24
+[2.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs -- -j24 -l24
+[2.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs
+[2.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rpi_gpio_msgs)
+[2.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/rpi_gpio_msgs
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs' for CMake module files
+[2.924s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs' for CMake config files
+[2.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'cmake_prefix_path')
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.ps1'
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.dsv'
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.sh'
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib'
+[2.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'ld_library_path_lib')
+[2.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.ps1'
+[2.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.dsv'
+[2.938s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.sh'
+[2.938s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/bin'
+[2.938s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib/pkgconfig/rpi_gpio_msgs.pc'
+[2.938s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib/python3.10/site-packages'
+[2.938s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'pythonpath')
+[2.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.ps1'
+[2.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.dsv'
+[2.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.sh'
+[2.945s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/bin'
+[2.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.ps1'
+[2.951s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.dsv'
+[2.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.sh'
+[2.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.bash'
+[2.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.zsh'
+[2.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/colcon-core/packages/rpi_gpio_msgs)
+[2.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rpi_gpio_msgs)
+[2.986s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs' for CMake module files
+[2.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs' for CMake config files
+[2.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'cmake_prefix_path')
+[2.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.ps1'
+[2.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.dsv'
+[2.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/cmake_prefix_path.sh'
+[2.994s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib'
+[2.994s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'ld_library_path_lib')
+[3.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.ps1'
+[3.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.dsv'
+[3.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/ld_library_path_lib.sh'
+[3.000s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/bin'
+[3.000s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib/pkgconfig/rpi_gpio_msgs.pc'
+[3.000s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/lib/python3.10/site-packages'
+[3.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio_msgs', 'pythonpath')
+[3.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.ps1'
+[3.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.dsv'
+[3.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/hook/pythonpath.sh'
+[3.007s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/bin'
+[3.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.ps1'
+[3.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.dsv'
+[3.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.sh'
+[3.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.bash'
+[3.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/rpi_gpio_msgs/package.zsh'
+[3.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/rpi_gpio_msgs/share/colcon-core/packages/rpi_gpio_msgs)
+[3.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/rpi_gpio -- -j24 -l24
+[3.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/rpi_gpio
+[3.498s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rpi_gpio)
+[3.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/rpi_gpio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/rpi_gpio
+[3.504s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio' for CMake module files
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio' for CMake config files
+[3.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio', 'cmake_prefix_path')
+[3.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.ps1'
+[3.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.dsv'
+[3.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.sh'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/bin'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/pkgconfig/rpi_gpio.pc'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/python3.10/site-packages'
+[3.511s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/bin'
+[3.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.ps1'
+[3.517s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.dsv'
+[3.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.sh'
+[3.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.bash'
+[3.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.zsh'
+[3.518s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/colcon-core/packages/rpi_gpio)
+[3.534s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rpi_gpio)
+[3.540s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio' for CMake module files
+[3.540s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio' for CMake config files
+[3.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('rpi_gpio', 'cmake_prefix_path')
+[3.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.ps1'
+[3.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.dsv'
+[3.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/hook/cmake_prefix_path.sh'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/bin'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/pkgconfig/rpi_gpio.pc'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/python3.10/site-packages'
+[3.548s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/bin'
+[3.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.ps1'
+[3.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.dsv'
+[3.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.sh'
+[3.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.bash'
+[3.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.zsh'
+[3.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/colcon-core/packages/rpi_gpio)
+[4.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/lsantos/GitHub/Sandbox/build/gpio_control -- -j24 -l24
+[4.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lsantos/GitHub/Sandbox/build/gpio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/gpio_control
+[4.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpio_control)
+[4.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lsantos/GitHub/Sandbox/build/gpio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/lsantos/GitHub/Sandbox/build/gpio_control
+[4.979s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control' for CMake module files
+[4.979s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control' for CMake config files
+[4.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpio_control', 'cmake_prefix_path')
+[4.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.ps1'
+[4.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.dsv'
+[4.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.sh'
+[4.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib'
+[4.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/bin'
+[4.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib/pkgconfig/gpio_control.pc'
+[4.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib/python3.10/site-packages'
+[4.987s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/bin'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.ps1'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.dsv'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.sh'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.bash'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.zsh'
+[4.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/gpio_control/share/colcon-core/packages/gpio_control)
+[5.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gpio_control)
+[5.030s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control' for CMake module files
+[5.030s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control' for CMake config files
+[5.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('gpio_control', 'cmake_prefix_path')
+[5.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.ps1'
+[5.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.dsv'
+[5.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/hook/cmake_prefix_path.sh'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/bin'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib/pkgconfig/gpio_control.pc'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/lib/python3.10/site-packages'
+[5.036s] Level 1:colcon.colcon_core.environment:checking '/home/lsantos/GitHub/Sandbox/install/gpio_control/bin'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.ps1'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.dsv'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.sh'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.bash'
+[5.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/lsantos/GitHub/Sandbox/install/gpio_control/share/gpio_control/package.zsh'
+[5.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lsantos/GitHub/Sandbox/install/gpio_control/share/colcon-core/packages/gpio_control)
+[5.042s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.043s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.051s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.052s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.058s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lsantos/GitHub/Sandbox/install/local_setup.ps1'
+[5.058s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lsantos/GitHub/Sandbox/install/_local_setup_util_ps1.py'
+[5.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lsantos/GitHub/Sandbox/install/setup.ps1'
+[5.065s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lsantos/GitHub/Sandbox/install/local_setup.sh'
+[5.065s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lsantos/GitHub/Sandbox/install/_local_setup_util_sh.py'
+[5.065s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lsantos/GitHub/Sandbox/install/setup.sh'
+[5.071s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lsantos/GitHub/Sandbox/install/local_setup.bash'
+[5.071s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lsantos/GitHub/Sandbox/install/setup.bash'
+[5.077s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lsantos/GitHub/Sandbox/install/local_setup.zsh'
+[5.077s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lsantos/GitHub/Sandbox/install/setup.zsh'

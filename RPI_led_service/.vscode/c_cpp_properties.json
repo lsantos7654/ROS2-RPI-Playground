@@ -6,7 +6,7 @@
                 "limitSymbolsToIncludedHeaders": false
             },
             "includePath": [
-                "~/Sandbox/RPI_led_service/**",
+                "~/Github/Sandbox/RPI_led_service/**",
                 "/opt/ros/iron/include/**",
                 "/usr/include/**"
             ],

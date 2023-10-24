@@ -1,2 +1,0 @@
-int32 gpiochoice
-int32 toggle

@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/iron/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rpi_gpio_msgs: 0.0.0 (/home/lsantos/GitHub/Sandbox/RPI_led_service/install/rpi_gpio_msgs/share/rpi_gpio_msgs/cmake)
+-- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lsantos/GitHub/Sandbox/build/rpi_gpio
+[ 25%] [32mBuilding CXX object CMakeFiles/gpio_server.dir/src/server.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gpio_client.dir/src/client.cpp.o[0m
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:[m[K In constructor ‘[01m[KGPIOServer::GPIOServer()[m[K’:
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:22:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   22 |         [01;35m[Kline1.request({"LED_17_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lsantos/GitHub/Sandbox/RPI_led_service/src/rpi_gpio/src/server.cpp:23:22:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kgpiod::line_request::flags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   23 |         [01;35m[Kline2.request({"LED_27_toggle", gpiod::line_request::DIRECTION_OUTPUT})[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable gpio_server[0m
+[100%] [32m[1mLinking CXX executable gpio_client[0m
+[100%] Built target gpio_server
+[100%] Built target gpio_client
+-- Install configuration: ""
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/rpi_gpio/gpio_server
+-- Set runtime path of "/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/rpi_gpio/gpio_server" to ""
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/rpi_gpio/gpio_client
+-- Set runtime path of "/home/lsantos/GitHub/Sandbox/install/rpi_gpio/lib/rpi_gpio/gpio_client" to ""
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/ament_index/resource_index/package_run_dependencies/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/ament_index/resource_index/parent_prefix_path/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/environment/ament_prefix_path.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/environment/path.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/environment/path.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/local_setup.bash
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/local_setup.sh
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/local_setup.zsh
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/local_setup.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.dsv
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/ament_index/resource_index/packages/rpi_gpio
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig.cmake
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/cmake/rpi_gpioConfig-version.cmake
+-- Installing: /home/lsantos/GitHub/Sandbox/install/rpi_gpio/share/rpi_gpio/package.xml

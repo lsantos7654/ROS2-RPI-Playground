@@ -1,1 +1,0 @@
-launch_ros:rclcpp:rosidl_default_generators:rosidl_default_runtime:rpi_gpio__rosidl_typesupport_c:rpi_gpio__rosidl_typesupport_cpp:rpi_gpio_msgs

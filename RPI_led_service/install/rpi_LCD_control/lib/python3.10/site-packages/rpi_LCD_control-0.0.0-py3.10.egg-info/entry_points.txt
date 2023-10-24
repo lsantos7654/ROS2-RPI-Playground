@@ -1,3 +1,0 @@
-[console_scripts]
-displayclient = rpi_LCD_control.scripts.displayclient:main
-
