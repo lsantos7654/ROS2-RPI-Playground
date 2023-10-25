@@ -37,7 +37,6 @@ Summary:
 First Time Build:
 On Host PC and Pi
 * navigate to RPI_led_service
-* rm -r build log install
 * source opt/ros/iron/setup.bash
 * colcon build
 * source install/setup.bash
@@ -60,4 +59,4 @@ Required Libraries:
 * sudo apt install libgpiod-dev gpiod
 * sudo apt install python3-colcon-common-extensions
 
-All projects using ros2
+All projects using ros2 iron
