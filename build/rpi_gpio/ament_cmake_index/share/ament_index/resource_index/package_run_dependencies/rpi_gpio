@@ -1,1 +1,0 @@
-rclcpp;rosidl_default_generators;rosidl_default_runtime;rpi_gpio__rosidl_typesupport_c;rpi_gpio__rosidl_typesupport_cpp;ament_lint_auto;ament_lint_common
